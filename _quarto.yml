@@ -1,0 +1,32 @@
+project:
+  type: book
+  output-dir: docs
+
+execute:
+  echo: true
+  warning: false
+  message: false
+
+toc: true
+toc-depth: 3
+# bibliography: references.bib
+
+book:
+  title: "Project Notebook for RISK"
+  author:
+  - John J. Curtin
+  - Claire Punturieri
+  - Kendra Wyant
+  - Susan Wanta
+  site-url: https://github.io/jjcurtin/docs_risk
+  repo-url: https://github.com/jjcurtin/docs_risk
+  repo-branch: main
+  repo-actions: [edit]
+  sharing: [facebook, linkedin]
+  page-navigation: true
+  chapters:
+    - index.qmd
+    - part: "Studies"
+      chapters:
+        - study_gps.qmd
+
