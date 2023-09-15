@@ -19,5 +19,33 @@
     "title": "2  Level 1 heading",
     "section": "2.1 Level 2 heading",
     "text": "2.1 Level 2 heading\n\n2.1.1 Level 3 heading\n\n2.1.1.1 Level 4 heading\nhere is some text"
+  },
+  {
+    "objectID": "study_gps.html#dataset-information",
+    "href": "study_gps.html#dataset-information",
+    "title": "1  Study GPS",
+    "section": "1.1 Dataset information",
+    "text": "1.1 Dataset information\nGPS data in Risk is collected as tuple of longitude and latitude."
+  },
+  {
+    "objectID": "study_gps.html#preprocessing",
+    "href": "study_gps.html#preprocessing",
+    "title": "1  Study GPS",
+    "section": "1.2 Preprocessing",
+    "text": "1.2 Preprocessing\n(Saeb et al., 2015) preprocessing procedures: “The first procedure determined whether each GPS location data sample came from a stationary state (eg, working in an office) or a transition state (eg, walking on the street)” – threshold speed set to 1km/h\n“The second procedure was clustering. We applied clustering only to the data samples in the stationary state. The goal was to identify the places where participants spent most of their time, such as home, workplaces, parks, etc.”"
+  },
+  {
+    "objectID": "study_gps.html#feature-engineering",
+    "href": "study_gps.html#feature-engineering",
+    "title": "1  Study GPS",
+    "section": "1.3 Feature engineering",
+    "text": "1.3 Feature engineering\n\n1.3.1 Features relating to location\n\nN of locations\nEntropy and normalized entropy (n.e. = invariant to # of clusters)\n\nHigh entropy: spending more time in fewer, more consistent locations; low entropy: spending more time in a larger number of more varied locations (De Angel et al., 2022)\n\nLocation Variance\n\nHow varied a participant’s locations are (De Angel et al., 2022)\n\nZip code/area delineations of income (DC map for ex.) This has always been interesting to be but I need to do more thinking on if it would actually add any value to existing data on SES that we have.\n\n\n\n1.3.2 Features relating to movement\n\nDistance\n\nFor example, total distance covered or maximum distance between two locations in a given time frame (Canzian and Musolesi, 2015)\n\nRadius of gyration\n\n“Used to quantify the coverage area and is defined as the deviation from the centroid of places visited in the interval” (Canzian and Musolesi, 2015)\n\nAverage Moving Speed\nMobility Radius\n\n\n\n1.3.3 Features relating to time\n\nHomestay\n\nAmount of time spent at home (De Angel et al., 2022)\n\nTime at Location\nTransition Time\n\nPercentage of time during which a participant was in a non-stationary state (Saeb et al., 2015)\n\n\n\n\n1.3.4 Features relating to circadian rhythms\n\nGPS useful for capturing temporal information from location data (Saeb et al., 2015) This sounds really cool in theory, not sure it would actually be that valuable if, for example, someone is a homebody.\nDiurnal movements indexes (Lomb-Scargle periodogram; Fraccaro et al., 2019) https://iopscience.iop.org/article/10.3847/1538-4365/aab766 – apparently useful for characterizing periodicity in unevenly sampled data\nSleep regularity index (SRI) https://github.com/mengelhard/sri Chronodisruption as an antecedent to lapsing?"
+  },
+  {
+    "objectID": "study_gps.html#analytic-techniques",
+    "href": "study_gps.html#analytic-techniques",
+    "title": "1  Study GPS",
+    "section": "1.4 Analytic techniques",
+    "text": "1.4 Analytic techniques\n\nGeographic information systems (GIS) https://mgimond.github.io/Spatial/introGIS.html\nStandard deviational ellipse\nMinimum convex polygon\nVernal density estimation\nPoint pattern analysis https://gistbok.ucgis.org/bok-topics/point-pattern-analysis"
   }
 ]
