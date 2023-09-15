@@ -1,9 +1,73 @@
-# Level 1 heading
+# Study GPS
+Claire Punturieri
+Last updated: 9/15/2023
 
-## Level 2 heading
+## Dataset information
 
-### Level 3 heading
+GPS data in Risk is collected as tuple of longitude and latitude.
 
-#### Level 4 heading
+## Preprocessing
 
-here is some text
+(Saeb et al., 2015) preprocessing procedures:
+“The first procedure determined whether each GPS location data sample came from a stationary state (eg, working in an office) or a transition state (eg, walking on the street)” – threshold speed set to 1km/h
+ 
+“The second procedure was clustering. We applied clustering only to the data samples in the stationary state. The goal was to identify the places where participants spent most of their time, such as home, workplaces, parks, etc.”
+
+## Feature engineering
+
+### Features relating to location
+- N of locations
+
+- Entropy and normalized entropy (n.e. = invariant to # of clusters)
+    - High entropy: spending more time in fewer, more consistent locations; low entropy:
+    spending more time in a larger number of more varied locations (De Angel et al., 2022)
+
+- Location Variance
+    - How varied a participant’s locations are (De Angel et al., 2022)
+    
+- Zip code/area delineations of income (DC map for ex.)
+    *This has always been interesting to be but I need to do more thinking on if
+    it would actually add any value to existing data on SES that we have.*
+
+### Features relating to movement
+- Distance
+    - For example, total distance covered or maximum distance between two locations
+    in a given time frame (Canzian and Musolesi, 2015)
+    
+- Radius of gyration
+    - "Used to quantify the coverage area and is defined as the deviation
+    from the centroid of places visited in the interval" (Canzian and Musolesi, 2015)
+    
+- Average Moving Speed
+
+- Mobility Radius
+
+### Features relating to time
+- Homestay
+    - Amount of time spent at home (De Angel et al., 2022)
+
+- Time at Location
+
+- Transition Time
+    - Percentage of time during which a participant was in a non-stationary state (Saeb et al., 2015)
+
+### Features relating to circadian rhythms
+- GPS useful for capturing temporal information from location data (Saeb et al., 2015)
+    *This sounds really cool in theory, not sure it would actually be that valuable if,
+    for example, someone is a homebody.*
+    
+- Diurnal movements indexes (Lomb-Scargle periodogram; Fraccaro et al., 2019) https://iopscience.iop.org/article/10.3847/1538-4365/aab766 -- apparently useful
+    for characterizing periodicity in unevenly sampled data
+    
+- Sleep regularity index (SRI) https://github.com/mengelhard/sri
+    *Chronodisruption as an antecedent to lapsing?*
+ 
+
+## Analytic techniques
+- Geographic information systems (GIS)
+    https://mgimond.github.io/Spatial/introGIS.html
+- Standard deviational ellipse
+- Minimum convex polygon
+- Vernal density estimation
+- Point pattern analysis
+    https://gistbok.ucgis.org/bok-topics/point-pattern-analysis
