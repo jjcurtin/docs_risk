@@ -7,20 +7,6 @@
     "text": "Welcome\nThis web book is a collection of general documentation, demonstrations, and other supporting materials for the RISK project."
   },
   {
-    "objectID": "study_gps.html#level-2-heading",
-    "href": "study_gps.html#level-2-heading",
-    "title": "1  Level 1 heading",
-    "section": "1.1 Level 2 heading",
-    "text": "1.1 Level 2 heading\n\n1.1.1 Level 3 heading\n\n1.1.1.1 Level 4 heading\nhere is some text"
-  },
-  {
-    "objectID": "study_insight.html#level-2-heading",
-    "href": "study_insight.html#level-2-heading",
-    "title": "2  Level 1 heading",
-    "section": "2.1 Level 2 heading",
-    "text": "2.1 Level 2 heading\n\n2.1.1 Level 3 heading\n\n2.1.1.1 Level 4 heading\nhere is some text"
-  },
-  {
     "objectID": "study_gps.html#dataset-information",
     "href": "study_gps.html#dataset-information",
     "title": "1  Study GPS",
@@ -47,5 +33,12 @@
     "title": "1  Study GPS",
     "section": "1.4 Analytic techniques",
     "text": "1.4 Analytic techniques\n\nGeographic information systems (GIS) https://mgimond.github.io/Spatial/introGIS.html\nStandard deviational ellipse\nMinimum convex polygon\nVernal density estimation\nPoint pattern analysis https://gistbok.ucgis.org/bok-topics/point-pattern-analysis"
+  },
+  {
+    "objectID": "study_insight.html#level-2-heading",
+    "href": "study_insight.html#level-2-heading",
+    "title": "2  Level 1 heading",
+    "section": "2.1 Level 2 heading",
+    "text": "2.1 Level 2 heading\n\n2.1.1 Level 3 heading\n\n2.1.1.1 Level 4 heading\nhere is some text"
   }
 ]
