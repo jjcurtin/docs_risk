@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.433">
+<meta name="generator" content="quarto-1.3.450">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -158,16 +158,12 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#dataset-information" id="toc-dataset-information" class="nav-link active" data-scroll-target="#dataset-information"><span class="header-section-number">1.1</span> Dataset information</a></li>
-  <li><a href="#preprocessing" id="toc-preprocessing" class="nav-link" data-scroll-target="#preprocessing"><span class="header-section-number">1.2</span> Preprocessing</a></li>
-  <li><a href="#feature-engineering" id="toc-feature-engineering" class="nav-link" data-scroll-target="#feature-engineering"><span class="header-section-number">1.3</span> Feature engineering</a>
+  <li><a href="#gps-procedure" id="toc-gps-procedure" class="nav-link active" data-scroll-target="#gps-procedure"><span class="header-section-number">1.1</span> GPS procedure</a></li>
+  <li><a href="#dataset-information" id="toc-dataset-information" class="nav-link" data-scroll-target="#dataset-information"><span class="header-section-number">1.2</span> Dataset information</a>
   <ul class="collapse">
-  <li><a href="#features-relating-to-location" id="toc-features-relating-to-location" class="nav-link" data-scroll-target="#features-relating-to-location"><span class="header-section-number">1.3.1</span> Features relating to location</a></li>
-  <li><a href="#features-relating-to-movement" id="toc-features-relating-to-movement" class="nav-link" data-scroll-target="#features-relating-to-movement"><span class="header-section-number">1.3.2</span> Features relating to movement</a></li>
-  <li><a href="#features-relating-to-time" id="toc-features-relating-to-time" class="nav-link" data-scroll-target="#features-relating-to-time"><span class="header-section-number">1.3.3</span> Features relating to time</a></li>
-  <li><a href="#features-relating-to-circadian-rhythms" id="toc-features-relating-to-circadian-rhythms" class="nav-link" data-scroll-target="#features-relating-to-circadian-rhythms"><span class="header-section-number">1.3.4</span> Features relating to circadian rhythms</a></li>
+  <li><a href="#data-files" id="toc-data-files" class="nav-link" data-scroll-target="#data-files"><span class="header-section-number">1.2.1</span> Data files</a></li>
+  <li><a href="#data-processing" id="toc-data-processing" class="nav-link" data-scroll-target="#data-processing"><span class="header-section-number">1.2.2</span> Data processing</a></li>
   </ul></li>
-  <li><a href="#analytic-techniques" id="toc-analytic-techniques" class="nav-link" data-scroll-target="#analytic-techniques"><span class="header-section-number">1.4</span> Analytic techniques</a></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/jjcurtin/docs_risk/edit/main/study_gps.qmd" class="toc-action">Edit this page</a></p></div></div></nav>
     </div>
@@ -191,82 +187,164 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>Claire Punturieri Last updated: 9/15/2023</p>
-<section id="dataset-information" class="level2" data-number="1.1">
-<h2 data-number="1.1" class="anchored" data-anchor-id="dataset-information"><span class="header-section-number">1.1</span> Dataset information</h2>
-<p>GPS data in Risk is collected as tuple of longitude and latitude.</p>
+<p>Claire Punturieri Last updated: 9/27/2023</p>
+<section id="gps-procedure" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="gps-procedure"><span class="header-section-number">1.1</span> GPS procedure</h2>
+<p>Participants current location was continuously tracked via GPS and WiFi positioning technology on individual cell phones and available to the A-CHESS program for the study duration (a total of three months of mobile monitoring).</p>
+<p>At monthly intervals, during follow-up visits <!--is this true-->, participants were asked to identify whether frequently visited locations (i.e., &gt;XX times per XX) were helpful or harmful to their recovery and what emotion was associated with the location (i.e., positive, negative, or mixed).</p>
+<p>Moves was used to track data from start of study until MM/DD/YYYY, after which FollowMee was used to capture participant geolocation data (MM/DD/YYYY until end of study) due to gaps in data collection.</p>
 </section>
-<section id="preprocessing" class="level2" data-number="1.2">
-<h2 data-number="1.2" class="anchored" data-anchor-id="preprocessing"><span class="header-section-number">1.2</span> Preprocessing</h2>
-<p>(Saeb et al., 2015) preprocessing procedures: “The first procedure determined whether each GPS location data sample came from a stationary state (eg, working in an office) or a transition state (eg, walking on the street)” – threshold speed set to 1km/h</p>
-<p>“The second procedure was clustering. We applied clustering only to the data samples in the stationary state. The goal was to identify the places where participants spent most of their time, such as home, workplaces, parks, etc.”</p>
+<section id="dataset-information" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="dataset-information"><span class="header-section-number">1.2</span> Dataset information</h2>
+<section id="data-files" class="level3" data-number="1.2.1">
+<h3 data-number="1.2.1" class="anchored" data-anchor-id="data-files"><span class="header-section-number">1.2.1</span> Data files</h3>
+<section id="raw-gps" class="level4" data-number="1.2.1.1">
+<h4 data-number="1.2.1.1" class="anchored" data-anchor-id="raw-gps"><span class="header-section-number">1.2.1.1</span> Raw GPS</h4>
+<section id="for-individual-subjects" class="level5" data-number="1.2.1.1.1">
+<h5 data-number="1.2.1.1.1" class="anchored" data-anchor-id="for-individual-subjects"><span class="header-section-number">1.2.1.1.1</span> For individual subjects:</h5>
+<p><strong>GPS</strong>: studydata/risk/data_raw/**/**_GPS.gpx <strong>Location</strong>: studydata/risk/data_raw/**/**_Locations.xlsx</p>
 </section>
-<section id="feature-engineering" class="level2" data-number="1.3">
-<h2 data-number="1.3" class="anchored" data-anchor-id="feature-engineering"><span class="header-section-number">1.3</span> Feature engineering</h2>
-<section id="features-relating-to-location" class="level3" data-number="1.3.1">
-<h3 data-number="1.3.1" class="anchored" data-anchor-id="features-relating-to-location"><span class="header-section-number">1.3.1</span> Features relating to location</h3>
-<ul>
-<li><p>N of locations</p></li>
-<li><p>Entropy and normalized entropy (n.e. = invariant to # of clusters)</p>
-<ul>
-<li>High entropy: spending more time in fewer, more consistent locations; low entropy: spending more time in a larger number of more varied locations (De Angel et al., 2022)</li>
-</ul></li>
-<li><p>Location Variance</p>
-<ul>
-<li>How varied a participant’s locations are (De Angel et al., 2022)</li>
-</ul></li>
-<li><p>Zip code/area delineations of income (DC map for ex.) <em>This has always been interesting to be but I need to do more thinking on if it would actually add any value to existing data on SES that we have.</em></p></li>
-</ul>
-</section>
-<section id="features-relating-to-movement" class="level3" data-number="1.3.2">
-<h3 data-number="1.3.2" class="anchored" data-anchor-id="features-relating-to-movement"><span class="header-section-number">1.3.2</span> Features relating to movement</h3>
-<ul>
-<li><p>Distance</p>
-<ul>
-<li>For example, total distance covered or maximum distance between two locations in a given time frame (Canzian and Musolesi, 2015)</li>
-</ul></li>
-<li><p>Radius of gyration</p>
-<ul>
-<li>“Used to quantify the coverage area and is defined as the deviation from the centroid of places visited in the interval” (Canzian and Musolesi, 2015)</li>
-</ul></li>
-<li><p>Average Moving Speed</p></li>
-<li><p>Mobility Radius</p></li>
-</ul>
-</section>
-<section id="features-relating-to-time" class="level3" data-number="1.3.3">
-<h3 data-number="1.3.3" class="anchored" data-anchor-id="features-relating-to-time"><span class="header-section-number">1.3.3</span> Features relating to time</h3>
-<ul>
-<li><p>Homestay</p>
-<ul>
-<li>Amount of time spent at home (De Angel et al., 2022)</li>
-</ul></li>
-<li><p>Time at Location</p></li>
-<li><p>Transition Time</p>
-<ul>
-<li>Percentage of time during which a participant was in a non-stationary state (Saeb et al., 2015)</li>
-</ul></li>
-</ul>
-</section>
-<section id="features-relating-to-circadian-rhythms" class="level3" data-number="1.3.4">
-<h3 data-number="1.3.4" class="anchored" data-anchor-id="features-relating-to-circadian-rhythms"><span class="header-section-number">1.3.4</span> Features relating to circadian rhythms</h3>
-<ul>
-<li><p>GPS useful for capturing temporal information from location data (Saeb et al., 2015) <em>This sounds really cool in theory, not sure it would actually be that valuable if, for example, someone is a homebody.</em></p></li>
-<li><p>Diurnal movements indexes (Lomb-Scargle periodogram; Fraccaro et al., 2019) https://iopscience.iop.org/article/10.3847/1538-4365/aab766 – apparently useful for characterizing periodicity in unevenly sampled data</p></li>
-<li><p>Sleep regularity index (SRI) https://github.com/mengelhard/sri <em>Chronodisruption as an antecedent to lapsing?</em></p></li>
-</ul>
+<section id="for-grouped-subjects" class="level5" data-number="1.2.1.1.2">
+<h5 data-number="1.2.1.1.2" class="anchored" data-anchor-id="for-grouped-subjects"><span class="header-section-number">1.2.1.1.2</span> For grouped subjects:</h5>
+<p><strong>GPS</strong>: studydata/risk/data_processed/shared/gps.csv <strong>Location</strong>: studydata/risk/data_processed/shared/locations.csv</p>
 </section>
 </section>
-<section id="analytic-techniques" class="level2" data-number="1.4">
-<h2 data-number="1.4" class="anchored" data-anchor-id="analytic-techniques"><span class="header-section-number">1.4</span> Analytic techniques</h2>
-<ul>
-<li>Geographic information systems (GIS) https://mgimond.github.io/Spatial/introGIS.html</li>
-<li>Standard deviational ellipse</li>
-<li>Minimum convex polygon</li>
-<li>Vernal density estimation</li>
-<li>Point pattern analysis https://gistbok.ucgis.org/bok-topics/point-pattern-analysis</li>
-</ul>
+<section id="enriched-data" class="level4" data-number="1.2.1.2">
+<h4 data-number="1.2.1.2" class="anchored" data-anchor-id="enriched-data"><span class="header-section-number">1.2.1.2</span> Enriched data</h4>
+<p>studydata/risk/data_processed/gps/gps_enriched.csv.xz</p>
+</section>
+</section>
+<section id="data-processing" class="level3" data-number="1.2.2">
+<h3 data-number="1.2.2" class="anchored" data-anchor-id="data-processing"><span class="header-section-number">1.2.2</span> Data processing</h3>
+<section id="scripts" class="level4" data-number="1.2.2.1">
+<h4 data-number="1.2.2.1" class="anchored" data-anchor-id="scripts"><span class="header-section-number">1.2.2.1</span> Scripts</h4>
+<!--Scripts are, to the best of my ability, in procedural order-->
+<section id="clean-raw-data" class="level5" data-number="1.2.2.1.1">
+<h5 data-number="1.2.2.1.1" class="anchored" data-anchor-id="clean-raw-data"><span class="header-section-number">1.2.2.1.1</span> Clean raw data</h5>
+<p><strong>cln_gps.Rmd (shared/scripts_cln/cln_gps.Rmd)</strong></p>
+<p>This script creates the analysis gps dataset and conducts EDA</p>
+<p><em>Input</em>: Participants’ raw gps data files (studydata/risk/data_raw/**/**_GPS.gpx)</p>
+<p><em>Output:</em> gps.csv, gps.rds</p>
+<p><strong>cln_locations.Rmd (shared/scripts_cln/cln_locations.Rmd)</strong></p>
+<p>This script opens the individual raw excel files for frequent locations in the individual subject folders, merges them, and then does EDA. Final clean, merged file is saved in shared folder.</p>
+<p><em>Input:</em> individual location files (studydata/risk/data_raw/**/**_Locations.xlsx)</p>
+<p><em>Output:</em> locations.csv</p>
+</section>
+<section id="create-dataframes" class="level5" data-number="1.2.2.1.2">
+<h5 data-number="1.2.2.1.2" class="anchored" data-anchor-id="create-dataframes"><span class="header-section-number">1.2.2.1.2</span> Create dataframes</h5>
+<p><strong>mak_study_dates.Rmd (gps/mak/mak_study_dates.Rmd)</strong></p>
+<p>This code is an update of code written by Kendra to make study dates for the meta study.</p>
+<p>It has been adapted by John for GPS study.</p>
+<p><em>Input</em>: visit_dates.csv, ema_morning.csv, ema_later.csv</p>
+<p><em>Output</em>: study_dates.csv</p>
+<p><strong>mak_labels_for_windows.Rmd</strong></p>
+<p>Creates lapse labels at 1 hour window duration, 1 day window duration, and 1 week window duration.</p>
+<p><em>Input:</em> lapses.csv, study_dates.csv</p>
+<p><em>Output:</em> labels_1hour.csv(.xz), labels_1day.csv(.xz), labels 1week.csv(.xz)</p>
+<p><strong>mak_gps_enriched.Rmd (gps/mak/mak_gps_enriched.Rmd)</strong></p>
+<p>This script aggregates gps files for all subjects and then matches each geolocation to its nearest context. Information on valid lapse determination for inclusion in this final sample can be found in the cleaning of EMA and lapses and in the <em>mak_study_dates.Rmd</em> scripts.</p>
+<p><em>Input:</em> study_dates.csv, locations.csv, gps.csv</p>
+<p><em>Output:</em> gps_enriched.csv(.xz)</p>
+<p><strong>mak_samples.Rmd (gps/mak/mak_samples.Rmd)</strong></p>
+<p>This script checks the GPS data of the N=151 and finalizes an overall sample and identifies an eyeball sample.</p>
+<p><em>Input</em>: study_dates.csv, locations.csv, gps_enriched.csv.xz</p>
+<p><em>Output</em>: N/A</p>
+</section>
+<section id="modeling-scripts" class="level5" data-number="1.2.2.1.3">
+<h5 data-number="1.2.2.1.3" class="anchored" data-anchor-id="modeling-scripts"><span class="header-section-number">1.2.2.1.3</span> Modeling scripts</h5>
+<!--Not sure of order of these quite yet-->
+<p><strong>mak_training_metrics.Rmd (gps/mak/mak_training_metrics.Rmd)</strong></p>
+<p>This script aggregates all results/metrics for a batch or batches of jobs that train all model configurations for a specific outcome/label window.</p>
+<p><em>Input:</em> jobs.csv, output, results</p>
+<p><em>Output</em>: N/A</p>
+<p><strong>mak_rset.Rmd gps/mak/mak_rset.Rmd</strong></p>
+<p>This script makes and saves an RSET object that includes train/test splits defined by GA Tech for use across our labs. It saves this rset in the gps study data folder on the server for use with this study.</p>
+<p><em>Input:</em> labels_05.csv, training_ids.csv</p>
+<p><em>Output:</em> rset.rds</p>
+<!--
+Scripts I am not sure how to categorize:
+
+**mak_features_combined.Rmd (gps/mak/mak_features_combined.Rmd)**
+Aggregates all CHTC features and checks for missing jobs and other EDA.
+
+*Input:* returned CHTC files (features, error, out)
+
+*Output:* features_WINDOW.csv
+-->
+<!--
+Commenting this out for now for sake of cleanliness/organization
+Claire's additions for FYP brainstorming
+
+## Preprocessing
+
+(Saeb et al., 2015) preprocessing procedures:
+“The first procedure determined whether each GPS location data sample came from a stationary state (eg, working in an office) or a transition state (eg, walking on the street)” – threshold speed set to 1km/h
+ 
+“The second procedure was clustering. We applied clustering only to the data samples in the stationary state. The goal was to identify the places where participants spent most of their time, such as home, workplaces, parks, etc.”
+
+## Feature engineering
+
+### Features relating to location
+- N of locations
+
+- Entropy and normalized entropy (n.e. = invariant to # of clusters)
+    - High entropy: spending more time in fewer, more consistent locations; low entropy:
+    spending more time in a larger number of more varied locations (De Angel et al., 2022)
+
+- Location Variance
+    - How varied a participant’s locations are (De Angel et al., 2022)
+    
+- Zip code/area delineations of income (DC map for ex.)
+    *This has always been interesting to be but I need to do more thinking on if
+    it would actually add any value to existing data on SES that we have.*
+
+### Features relating to movement
+- Distance
+    - For example, total distance covered or maximum distance between two locations
+    in a given time frame (Canzian and Musolesi, 2015)
+    
+- Radius of gyration
+    - "Used to quantify the coverage area and is defined as the deviation
+    from the centroid of places visited in the interval" (Canzian and Musolesi, 2015)
+    
+- Average Moving Speed
+
+- Mobility Radius
+
+### Features relating to time
+- Homestay
+    - Amount of time spent at home (De Angel et al., 2022)
+
+- Time at Location
+
+- Transition Time
+    - Percentage of time during which a participant was in a non-stationary state (Saeb et al., 2015)
+
+### Features relating to circadian rhythms
+- GPS useful for capturing temporal information from location data (Saeb et al., 2015)
+    *This sounds really cool in theory, not sure it would actually be that valuable if,
+    for example, someone is a homebody.*
+    
+- Diurnal movements indexes (Lomb-Scargle periodogram; Fraccaro et al., 2019) https://iopscience.iop.org/article/10.3847/1538-4365/aab766 -- apparently useful
+    for characterizing periodicity in unevenly sampled data
+    
+- Sleep regularity index (SRI) https://github.com/mengelhard/sri
+    *Chronodisruption as an antecedent to lapsing?*
+ 
+
+## Analytic techniques
+- Geographic information systems (GIS)
+    https://mgimond.github.io/Spatial/introGIS.html
+- Standard deviational ellipse
+- Minimum convex polygon
+- Vernal density estimation
+- Point pattern analysis
+    https://gistbok.ucgis.org/bok-topics/point-pattern-analysis -->
 
 
+</section>
+</section>
+</section>
 </section>
 
 </main> <!-- /main -->

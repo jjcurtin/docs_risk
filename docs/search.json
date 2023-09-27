@@ -10,8 +10,8 @@
     "objectID": "study_gps.html#dataset-information",
     "href": "study_gps.html#dataset-information",
     "title": "1  Study GPS",
-    "section": "1.1 Dataset information",
-    "text": "1.1 Dataset information\nGPS data in Risk is collected as tuple of longitude and latitude."
+    "section": "1.2 Dataset information",
+    "text": "1.2 Dataset information\n\n1.2.1 Data files\n\n1.2.1.1 Raw GPS\n\n1.2.1.1.1 For individual subjects:\nGPS: studydata/risk/data_raw/**/**_GPS.gpx Location: studydata/risk/data_raw/**/**_Locations.xlsx\n\n\n1.2.1.1.2 For grouped subjects:\nGPS: studydata/risk/data_processed/shared/gps.csv Location: studydata/risk/data_processed/shared/locations.csv\n\n\n\n1.2.1.2 Enriched data\nstudydata/risk/data_processed/gps/gps_enriched.csv.xz\n\n\n\n1.2.2 Data processing\n\n1.2.2.1 Scripts\n\n\n1.2.2.1.1 Clean raw data\ncln_gps.Rmd (shared/scripts_cln/cln_gps.Rmd)\nThis script creates the analysis gps dataset and conducts EDA\nInput: Participants’ raw gps data files (studydata/risk/data_raw/**/**_GPS.gpx)\nOutput: gps.csv, gps.rds\ncln_locations.Rmd (shared/scripts_cln/cln_locations.Rmd)\nThis script opens the individual raw excel files for frequent locations in the individual subject folders, merges them, and then does EDA. Final clean, merged file is saved in shared folder.\nInput: individual location files (studydata/risk/data_raw/**/**_Locations.xlsx)\nOutput: locations.csv\n\n\n1.2.2.1.2 Create dataframes\nmak_study_dates.Rmd (gps/mak/mak_study_dates.Rmd)\nThis code is an update of code written by Kendra to make study dates for the meta study.\nIt has been adapted by John for GPS study.\nInput: visit_dates.csv, ema_morning.csv, ema_later.csv\nOutput: study_dates.csv\nmak_labels_for_windows.Rmd\nCreates lapse labels at 1 hour window duration, 1 day window duration, and 1 week window duration.\nInput: lapses.csv, study_dates.csv\nOutput: labels_1hour.csv(.xz), labels_1day.csv(.xz), labels 1week.csv(.xz)\nmak_gps_enriched.Rmd (gps/mak/mak_gps_enriched.Rmd)\nThis script aggregates gps files for all subjects and then matches each geolocation to its nearest context. Information on valid lapse determination for inclusion in this final sample can be found in the cleaning of EMA and lapses and in the mak_study_dates.Rmd scripts.\nInput: study_dates.csv, locations.csv, gps.csv\nOutput: gps_enriched.csv(.xz)\nmak_samples.Rmd (gps/mak/mak_samples.Rmd)\nThis script checks the GPS data of the N=151 and finalizes an overall sample and identifies an eyeball sample.\nInput: study_dates.csv, locations.csv, gps_enriched.csv.xz\nOutput: N/A\n\n\n1.2.2.1.3 Modeling scripts\n\nmak_training_metrics.Rmd (gps/mak/mak_training_metrics.Rmd)\nThis script aggregates all results/metrics for a batch or batches of jobs that train all model configurations for a specific outcome/label window.\nInput: jobs.csv, output, results\nOutput: N/A\nmak_rset.Rmd gps/mak/mak_rset.Rmd\nThis script makes and saves an RSET object that includes train/test splits defined by GA Tech for use across our labs. It saves this rset in the gps study data folder on the server for use with this study.\nInput: labels_05.csv, training_ids.csv\nOutput: rset.rds"
   },
   {
     "objectID": "study_gps.html#preprocessing",
@@ -40,5 +40,12 @@
     "title": "2  Level 1 heading",
     "section": "2.1 Level 2 heading",
     "text": "2.1 Level 2 heading\n\n2.1.1 Level 3 heading\n\n2.1.1.1 Level 4 heading\nhere is some text"
+  },
+  {
+    "objectID": "study_gps.html#gps-procedure",
+    "href": "study_gps.html#gps-procedure",
+    "title": "1  Study GPS",
+    "section": "1.1 GPS procedure",
+    "text": "1.1 GPS procedure\nParticipants current location was continuously tracked via GPS and WiFi positioning technology on individual cell phones and available to the A-CHESS program for the study duration (a total of three months of mobile monitoring).\nAt monthly intervals, during follow-up visits , participants were asked to identify whether frequently visited locations (i.e., &gt;XX times per XX) were helpful or harmful to their recovery and what emotion was associated with the location (i.e., positive, negative, or mixed).\nMoves was used to track data from start of study until MM/DD/YYYY, after which FollowMee was used to capture participant geolocation data (MM/DD/YYYY until end of study) due to gaps in data collection."
   }
 ]
