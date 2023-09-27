@@ -1,10 +1,145 @@
 # Study GPS
 Claire Punturieri
-Last updated: 9/15/2023
+Last updated: 9/27/2023
+
+## GPS procedure
+
+Participants current location was continuously tracked via GPS and WiFi positioning technology
+on individual cell phones and available to the A-CHESS program for the study duration (a total
+of three months of mobile monitoring).
+
+At monthly intervals, during follow-up visits <!--is this true-->, participants were asked to
+identify whether frequently visited locations (i.e., >XX times per XX) were helpful or
+harmful to their recovery and what emotion was associated with the location (i.e., positive,
+negative, or mixed).
+
+Moves was used to track data from start of study until MM/DD/YYYY, after which FollowMee was
+used to capture participant geolocation data (MM/DD/YYYY until end of study) due to
+gaps in data collection.
+
 
 ## Dataset information
 
-GPS data in Risk is collected as tuple of longitude and latitude.
+### Data files
+
+#### Raw GPS
+
+##### For individual subjects:
+
+**GPS**: studydata/risk/data_raw/\*\*/\*\*_GPS.gpx
+**Location**: studydata/risk/data_raw/\*\*/\*\*_Locations.xlsx
+
+##### For grouped subjects:
+
+**GPS**: studydata/risk/data_processed/shared/gps.csv
+**Location**: studydata/risk/data_processed/shared/locations.csv
+
+#### Enriched data
+
+studydata/risk/data_processed/gps/gps_enriched.csv.xz
+
+### Data processing
+
+#### Scripts
+<!--Scripts are, to the best of my ability, in procedural order-->
+##### Clean raw data
+
+**cln_gps.Rmd (shared/scripts_cln/cln_gps.Rmd)**
+
+This script creates the analysis gps dataset and conducts EDA
+
+*Input*: Participants' raw gps data files (studydata/risk/data_raw/\*\*/\*\*_GPS.gpx)
+
+*Output:* gps.csv, gps.rds
+
+**cln_locations.Rmd (shared/scripts_cln/cln_locations.Rmd)**
+
+This script opens the individual raw excel files for frequent locations in the 
+individual subject folders, merges them, and then does EDA.   Final clean, merged
+file is saved in shared folder.
+
+*Input:* individual location files (studydata/risk/data_raw/\*\*/\*\*_Locations.xlsx)
+
+*Output:* locations.csv
+
+##### Create dataframes
+
+**mak_study_dates.Rmd (gps/mak/mak_study_dates.Rmd)**
+
+This code is an update of code written by Kendra to make study dates for the meta study.
+
+It has been adapted by John for GPS study.
+
+*Input*: visit_dates.csv, ema_morning.csv, ema_later.csv
+
+*Output*: study_dates.csv
+
+**mak_labels_for_windows.Rmd**
+
+Creates lapse labels at 1 hour window duration, 1 day window duration, and 1 week window duration.
+
+*Input:* lapses.csv, study_dates.csv
+
+*Output:* labels_1hour.csv(.xz), labels_1day.csv(.xz), labels 1week.csv(.xz)
+
+
+**mak_gps_enriched.Rmd (gps/mak/mak_gps_enriched.Rmd)**
+
+This script aggregates gps files for all subjects and then matches each geolocation to its nearest context.
+Information on valid lapse determination for inclusion in this final sample can be found in the cleaning of
+EMA and lapses and in the *mak_study_dates.Rmd* scripts.
+
+*Input:* study_dates.csv, locations.csv, gps.csv
+
+*Output:* gps_enriched.csv(.xz)
+
+
+**mak_samples.Rmd (gps/mak/mak_samples.Rmd)**
+
+This script checks the GPS data of the N=151 and finalizes an overall sample 
+and identifies an eyeball sample.
+
+*Input*: study_dates.csv, locations.csv, gps_enriched.csv.xz
+
+*Output*: N/A
+
+
+##### Modeling scripts
+<!--Not sure of order of these quite yet-->
+
+**mak_training_metrics.Rmd (gps/mak/mak_training_metrics.Rmd)**
+
+This script aggregates all results/metrics for a batch or batches of jobs
+that train all model configurations for a specific outcome/label window.
+
+*Input:* jobs.csv, output, results
+
+*Output*: N/A
+
+**mak_rset.Rmd gps/mak/mak_rset.Rmd**
+
+This script makes and saves an RSET object that includes train/test splits
+defined by GA Tech for use across our labs. It saves this rset in the gps study 
+data folder on the server for use with this study.
+
+*Input:* labels_05.csv, training_ids.csv
+
+*Output:* rset.rds
+
+<!--
+Scripts I am not sure how to categorize:
+
+**mak_features_combined.Rmd (gps/mak/mak_features_combined.Rmd)**
+Aggregates all CHTC features and checks for missing jobs and other EDA.
+
+*Input:* returned CHTC files (features, error, out)
+
+*Output:* features_WINDOW.csv
+-->
+
+<!--
+Commenting this out for now for sake of cleanliness/organization
+Claire's additions for FYP brainstorming
 
 ## Preprocessing
 
@@ -70,4 +205,4 @@ GPS data in Risk is collected as tuple of longitude and latitude.
 - Minimum convex polygon
 - Vernal density estimation
 - Point pattern analysis
-    https://gistbok.ucgis.org/bok-topics/point-pattern-analysis
+    https://gistbok.ucgis.org/bok-topics/point-pattern-analysis -->
