@@ -16,6 +16,7 @@ book:
   author:
   - John J. Curtin
   - Claire Punturieri
+  - Coco Yu
   - Kendra Wyant
   - Susan Wanta
   - Gaylen Fronk
@@ -30,5 +31,6 @@ book:
     - part: "Studies"
       chapters:
         - study_gps.qmd
+        - study_messages.qmd
         - study_insight.qmd
 

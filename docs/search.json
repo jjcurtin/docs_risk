@@ -7,41 +7,6 @@
     "text": "Welcome\nThis web book is a collection of general documentation, demonstrations, and other supporting materials for the RISK project."
   },
   {
-    "objectID": "study_gps.html#dataset-information",
-    "href": "study_gps.html#dataset-information",
-    "title": "1  Study GPS",
-    "section": "1.2 Dataset information",
-    "text": "1.2 Dataset information\nData files\n\n\n\n\n\n\n\n\nData type\nLevel\nLocation\n\n\n\n\nRaw GPS\nIndividual\nstudydata/risk/data_raw/**/**_GPS.gpx\n\n\nRaw GPS\nIndividual\nstudydata/risk/data_raw/**/**_Locations.xlsx\n\n\nRaw GPS\nGroup\nstudydata/risk/data_processed/shared/gps.csv\n\n\nRaw GPS\nGroup\nstudydata/risk/data_processed/shared/locations.csv\n\n\nEnriched GPS\nGroup\nstudydata/risk/data_processed/gps/gps_enriched.csv.xz\n\n\n\nData processing\n\n\nScripts\nClean raw data\n\ncln_gps.Rmd (shared/scripts_cln/cln_gps.Rmd)\n\nThis script creates the analysis gps dataset and conducts EDA\n\n\nInput: Participants’ raw gps data files (studydata/risk/data_raw/**/**_GPS.gpx)\nOutput: gps.csv, gps.rds\ncln_locations.Rmd (shared/scripts_cln/cln_locations.Rmd)\nThis script opens the individual raw excel files for frequent locations in the individual subject folders, merges them, and then does EDA. Final clean, merged file is saved in shared folder.\nInput: individual location files (studydata/risk/data_raw/**/**_Locations.xlsx)\nOutput: locations.csv\nCreate dataframes\n\nmak_study_dates.Rmd (gps/mak/mak_study_dates.Rmd)\nThis code is an update of code written by Kendra to make study dates for the meta study.\nIt has been adapted by John for GPS study.\nInput: visit_dates.csv, ema_morning.csv, ema_later.csv\nOutput: study_dates.csv\nmak_labels_for_windows.Rmd\nCreates lapse labels at 1 hour window duration, 1 day window duration, and 1 week window duration.\nInput: lapses.csv, study_dates.csv\nOutput: labels_1hour.csv(.xz), labels_1day.csv(.xz), labels 1week.csv(.xz)\nmak_gps_enriched.Rmd (gps/mak/mak_gps_enriched.Rmd)\nThis script aggregates gps files for all subjects and then matches each geolocation to its nearest context. Information on valid lapse determination for inclusion in this final sample can be found in the cleaning of EMA and lapses and in the mak_study_dates.Rmd scripts.\nInput: study_dates.csv, locations.csv, gps.csv\nOutput: gps_enriched.csv(.xz)\nmak_samples.Rmd (gps/mak/mak_samples.Rmd)\nThis script checks the GPS data of the N=151 and finalizes an overall sample and identifies an eyeball sample.\nInput: study_dates.csv, locations.csv, gps_enriched.csv.xz\nOutput: N/A\n\n1.2.0.0.1 Modeling scripts\n\nmak_training_metrics.Rmd (gps/mak/mak_training_metrics.Rmd)\nThis script aggregates all results/metrics for a batch or batches of jobs that train all model configurations for a specific outcome/label window.\nInput: jobs.csv, output, results\nOutput: N/A\nmak_rset.Rmd gps/mak/mak_rset.Rmd\nThis script makes and saves an RSET object that includes train/test splits defined by GA Tech for use across our labs. It saves this rset in the gps study data folder on the server for use with this study.\nInput: labels_05.csv, training_ids.csv\nOutput: rset.rds"
-  },
-  {
-    "objectID": "study_gps.html#preprocessing",
-    "href": "study_gps.html#preprocessing",
-    "title": "1  Study GPS",
-    "section": "1.2 Preprocessing",
-    "text": "1.2 Preprocessing\n(Saeb et al., 2015) preprocessing procedures: “The first procedure determined whether each GPS location data sample came from a stationary state (eg, working in an office) or a transition state (eg, walking on the street)” – threshold speed set to 1km/h\n“The second procedure was clustering. We applied clustering only to the data samples in the stationary state. The goal was to identify the places where participants spent most of their time, such as home, workplaces, parks, etc.”"
-  },
-  {
-    "objectID": "study_gps.html#feature-engineering",
-    "href": "study_gps.html#feature-engineering",
-    "title": "1  Study GPS",
-    "section": "1.3 Feature engineering",
-    "text": "1.3 Feature engineering\n\n1.3.1 Features relating to location\n\nN of locations\nEntropy and normalized entropy (n.e. = invariant to # of clusters)\n\nHigh entropy: spending more time in fewer, more consistent locations; low entropy: spending more time in a larger number of more varied locations (De Angel et al., 2022)\n\nLocation Variance\n\nHow varied a participant’s locations are (De Angel et al., 2022)\n\nZip code/area delineations of income (DC map for ex.) This has always been interesting to be but I need to do more thinking on if it would actually add any value to existing data on SES that we have.\n\n\n\n1.3.2 Features relating to movement\n\nDistance\n\nFor example, total distance covered or maximum distance between two locations in a given time frame (Canzian and Musolesi, 2015)\n\nRadius of gyration\n\n“Used to quantify the coverage area and is defined as the deviation from the centroid of places visited in the interval” (Canzian and Musolesi, 2015)\n\nAverage Moving Speed\nMobility Radius\n\n\n\n1.3.3 Features relating to time\n\nHomestay\n\nAmount of time spent at home (De Angel et al., 2022)\n\nTime at Location\nTransition Time\n\nPercentage of time during which a participant was in a non-stationary state (Saeb et al., 2015)\n\n\n\n\n1.3.4 Features relating to circadian rhythms\n\nGPS useful for capturing temporal information from location data (Saeb et al., 2015) This sounds really cool in theory, not sure it would actually be that valuable if, for example, someone is a homebody.\nDiurnal movements indexes (Lomb-Scargle periodogram; Fraccaro et al., 2019) https://iopscience.iop.org/article/10.3847/1538-4365/aab766 – apparently useful for characterizing periodicity in unevenly sampled data\nSleep regularity index (SRI) https://github.com/mengelhard/sri Chronodisruption as an antecedent to lapsing?"
-  },
-  {
-    "objectID": "study_gps.html#analytic-techniques",
-    "href": "study_gps.html#analytic-techniques",
-    "title": "1  Study GPS",
-    "section": "1.4 Analytic techniques",
-    "text": "1.4 Analytic techniques\n\nGeographic information systems (GIS) https://mgimond.github.io/Spatial/introGIS.html\nStandard deviational ellipse\nMinimum convex polygon\nVernal density estimation\nPoint pattern analysis https://gistbok.ucgis.org/bok-topics/point-pattern-analysis"
-  },
-  {
-    "objectID": "study_insight.html#level-2-heading",
-    "href": "study_insight.html#level-2-heading",
-    "title": "2  Level 1 heading",
-    "section": "2.1 Level 2 heading",
-    "text": "2.1 Level 2 heading\n\n2.1.1 Level 3 heading\n\n2.1.1.1 Level 4 heading\nhere is some text"
-  },
-  {
     "objectID": "study_gps.html#gps-procedure",
     "href": "study_gps.html#gps-procedure",
     "title": "1  Study GPS",
@@ -61,5 +26,33 @@
     "title": "1  Study GPS",
     "section": "1.3 Data processing",
     "text": "1.3 Data processing\n\n\n1.3.1 Data cleaning and concatenating\n\n\n\n\n\n\n\n\n\n\nName \nPath \nFunction \nInput \nOutput \n\n\n\n\ncln_gps.Rmd\nshared/scripts_cln/\ncreates the analysis gps dataset and conducts EDA\nindividual gps data files (studydata/risk/data_raw/**/**_GPS.gpx)\ngps.csv, gps.rds\n\n\ncln_locations.Rmd\nshared/scripts_cln/\nopens the individual raw excel files for frequent locations in the individual subject folders, merges them, and then does EDA\nindividual location files (studydata/risk/data_raw/**/**_Locations.xlsx)\nlocations.csv\n\n\nmak_study_dates.Rmd\ngps/mak/\ncreate list of important study dates\nvisit_dates.csv, ema_morning.csv, ema_later.csv\nstudy_dates.csv\n\n\nmak_labels_for_windows.Rmd\ngps/mak/\ncreates lapse labels at 1 hour window duration, 1 day window duration, and 1 week window duration.\nlapses.csv, study_dates.csv\nlabels_1hour.csv(.xz), labels_1day.csv(.xz), labels 1week.csv(.xz)\n\n\nmak_gps_enriched.Rmd\ngps/mak/\naggregates gps files for all subjects and then matches each geolocation to its nearest context\nstudy_dates.csv, locations.csv, gps.csv\nstudy_dates.csv, locations.csv, gps.csv\n\n\nmak_samples.Rmd\ngps/mak/\nchecks the GPS data and finalizes an overall sample\nstudy_dates.csv, locations.csv, gps_enriched.csv.xz\n# subj with satisfactory/missing data, days of missing GPS\n\n\n\n\n\n1.3.2 Modeling scripts\n\n\n\n\n\n\n\n\n\n\n\nName \nPath \nFunction \nInput \nOutput \n\n\n\n\nmak_features_combined.Rmd\ngps/mak/\naggregates all CHTC features and checks for missing jobs and other EDA\nreturned CHTC files (features, error, out)\nfeatures_{WINDOW}.csv\n\n\nmak_training_metrics.Rmd\ngps/mak/\naggregates all results/metrics for a batch or batches of jobs that train all model configurations for a specific outcome/label window\njobs.csv, all result CSVs\nmodel comparisons (?)\n\n\nmak_rset.Rmd\ngps/mak/\nmakes and saves an RSET object that includes train/test splits defined by GA Tech for use across our labs\nlabels_05.csv, training_ids.csv\nrset.rds"
+  },
+  {
+    "objectID": "study_messages.html#communications-collection-procedure",
+    "href": "study_messages.html#communications-collection-procedure",
+    "title": "2  Study Messages",
+    "section": "2.1 Communications collection procedure",
+    "text": "2.1 Communications collection procedure\nParticipants current location was continuously tracked via GPS and WiFi positioning technology on individual cell phones and available to the A-CHESS program for the study duration (a total of three months of mobile monitoring).\nAt monthly intervals, during follow-up visits , participants were asked to identify whether frequently visited locations (i.e., &gt;XX times per XX) were helpful or harmful to their recovery and what emotion was associated with the location (i.e., positive, negative, or mixed).\nMoves was used to track data from start of study until MM/DD/YYYY, after which FollowMee was used to capture participant geolocation data (MM/DD/YYYY until end of study) due to gaps in data collection."
+  },
+  {
+    "objectID": "study_messages.html#data-files",
+    "href": "study_messages.html#data-files",
+    "title": "2  Study Messages",
+    "section": "2.2 Data Files",
+    "text": "2.2 Data Files\n\n\n\n\n\n\n\n\nData type\nLevel\nLocation\n\n\n\n\nRaw GPS\nIndividual\nstudydata/risk/data_raw/**/**_GPS.gpx\n\n\nRaw GPS\nIndividual\nstudydata/risk/data_raw/**/**_Locations.xlsx\n\n\nRaw GPS\nGroup\nstudydata/risk/data_processed/shared/gps.csv\n\n\nRaw GPS\nGroup\nstudydata/risk/data_processed/shared/locations.csv\n\n\nEnriched GPS\nGroup\nstudydata/risk/data_processed/gps/gps_enriched.csv.xz"
+  },
+  {
+    "objectID": "study_messages.html#data-processing",
+    "href": "study_messages.html#data-processing",
+    "title": "2  Study Messages",
+    "section": "2.3 Data processing",
+    "text": "2.3 Data processing\n\n\n2.3.1 Data cleaning and concatenating\n\n\n\n\n\n\n\n\n\n\nName \nPath \nFunction \nInput \nOutput \n\n\n\n\ncln_gps.Rmd\nshared/scripts_cln/\ncreates the analysis gps dataset and conducts EDA\nindividual gps data files (studydata/risk/data_raw/**/**_GPS.gpx)\ngps.csv, gps.rds\n\n\ncln_locations.Rmd\nshared/scripts_cln/\nopens the individual raw excel files for frequent locations in the individual subject folders, merges them, and then does EDA\nindividual location files (studydata/risk/data_raw/**/**_Locations.xlsx)\nlocations.csv\n\n\nmak_study_dates.Rmd\ngps/mak/\ncreate list of important study dates\nvisit_dates.csv, ema_morning.csv, ema_later.csv\nstudy_dates.csv\n\n\nmak_labels_for_windows.Rmd\ngps/mak/\ncreates lapse labels at 1 hour window duration, 1 day window duration, and 1 week window duration.\nlapses.csv, study_dates.csv\nlabels_1hour.csv(.xz), labels_1day.csv(.xz), labels 1week.csv(.xz)\n\n\nmak_gps_enriched.Rmd\ngps/mak/\naggregates gps files for all subjects and then matches each geolocation to its nearest context\nstudy_dates.csv, locations.csv, gps.csv\nstudy_dates.csv, locations.csv, gps.csv\n\n\nmak_samples.Rmd\ngps/mak/\nchecks the GPS data and finalizes an overall sample\nstudy_dates.csv, locations.csv, gps_enriched.csv.xz\n# subj with satisfactory/missing data, days of missing GPS"
+  },
+  {
+    "objectID": "study_insight.html#level-2-heading",
+    "href": "study_insight.html#level-2-heading",
+    "title": "3  Level 1 heading",
+    "section": "3.1 Level 2 heading",
+    "text": "3.1 Level 2 heading\n\n3.1.1 Level 3 heading\n\n3.1.1.1 Level 4 heading\nhere is some text"
   }
 ]
