@@ -2,9 +2,13 @@
 
 Coco Yu
 
-Last updated: 10/4/2023
+Last updated: 10/6/2023
 
 ## Communications collection procedure
+
+Participants completed a semi-structured interview at intake and each of the three follow-up visits over the course of three months that collects information about frequently communicated contacts. Interview questions include contextual information about each contact was used to get drinking (e.g., past-drinking history with a contact) and risk-related information (e.g., pleasantness or unpleasantness of interacting with a contact).
+
+At intake, participants reported contact communications retrospectively. At each one-month follow-up visit, the researchers directly backed up the participants' non-deleted text messages and phone call logs from phone. Contextual questions about newly identified people were asked.
 
 ## Data Files
 
@@ -17,11 +21,12 @@ Last updated: 10/4/2023
 | Processed SMS Messages on Android | Individual | studydata/risk/data_processed/shared/sms_android.csv |
 | Processed SMS Messages on IOS     | Individual | studydata/risk/data_processed/shared/sms_ios.csv     |
 
--   
-
 ## Data processing
 
 ### Data cleaning and concatenating
 
-| Name | Path | Function | Input | Output |
-|------|------|----------|-------|--------|
+| Name                | Path                                                 | Function                                                      | Input                                          | Output          |
+|---------------|---------------|---------------|---------------|---------------|
+| cln_contacts.rmd    | analysis_risk/shared/scripts_cln/cln_contacts.rmd    | cleans up contact information for EDA                         | individual contact files (###\_Contacts.xlsx)  | contacts.csv    |
+| cln_sms_android.rmd | analysis_risk/shared/scripts_cln/cln_sms_android.rmd | cleans up text messages information on android device for EDA | up to three text message for each participant  | ###\_SMS\_#.xml |
+| cln_sms_ios.rmd     | analysis_risk/shared/scripts_cln/cln_sms_ios.rmd     | cleans up text messages information on ios device for EDA     | up to three text messages for each participant | ###\_SMS\_#.sql |
