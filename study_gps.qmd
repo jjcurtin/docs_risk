@@ -1,7 +1,7 @@
 # Study GPS
 Claire Punturieri
 
-Last updated: 9/28/2023
+Last updated: 10/9/2023
 
 ## GPS procedure
 
@@ -9,14 +9,13 @@ Participants current location was continuously tracked via GPS and WiFi position
 on individual cell phones and available to the A-CHESS program for the study duration (a total
 of three months of mobile monitoring).
 
-At monthly intervals, during follow-up visits <!--is this true-->, participants were asked to
-identify whether frequently visited locations (i.e., >XX times per XX) were helpful or
+At monthly intervals, during follow-up visits (at month 1, 2, and 3), participants were asked to
+identify whether frequently visited locations (i.e., >2 times per month) were helpful or
 harmful to their recovery and what emotion was associated with the location (i.e., positive,
 negative, or mixed).
 
-Moves was used to track data from start of study until MM/DD/YYYY, after which FollowMee was
-used to capture participant geolocation data (MM/DD/YYYY until end of study) due to
-gaps in data collection.
+Moves was used to track data from start of study until July 2018, after which FollowMee was
+used to capture participant geolocation data because the app was bought out by <a href="https://www.theguardian.com/technology/2014/apr/24/facebook-buys-moves-fitness-tracking-health-data">Facebook</a>, and then subsequently was <a href="https://about.fb.com/news/2018/07/hello-tbh-moving-on/#:~:text=In%202014%2C%20we%20bought%20the,Facebook%20acquired%20tbh%20in%202017.">deprecated.</a>
 
 
 ## Data Files
@@ -51,7 +50,9 @@ gaps in data collection.
 | mak_samples.Rmd | gps/mak/ | checks the GPS data and finalizes an overall sample | study_dates.csv, locations.csv, gps_enriched.csv.xz | # subj with satisfactory/missing data, days of missing GPS |
 
 ### Modeling scripts
-<!--Not sure of order of these quite yet-->
+<!--Not sure of order of these quite yet
+Note that these scripts will be modified/updated so this section
+will almost certainly change.-->
 
 |  Name <img width=250/> | Path  <img width=150/> | Function <img width=400/> | Input     <img width=350/>        | Output  <img width=150/>         |
 |--------|------|----------|-------------------|------------------|
