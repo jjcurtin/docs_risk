@@ -54,5 +54,12 @@
     "title": "3  Level 1 heading",
     "section": "3.1 Level 2 heading",
     "text": "3.1 Level 2 heading\n\n3.1.1 Level 3 heading\n\n3.1.1.1 Level 4 heading\nhere is some text"
+  },
+  {
+    "objectID": "index.html#data-organization",
+    "href": "index.html#data-organization",
+    "title": "Project Notebook for RISK",
+    "section": "Data Organization",
+    "text": "Data Organization\n\n\n# A tibble: 2 × 3\n   var1  var2  var3\n  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;\n1     1     2     3\n2     3     5     6"
   }
 ]

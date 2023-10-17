@@ -1,4 +1,21 @@
+---
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
 ## Welcome {.unnumbered}
 
 This web book is a collection of general documentation, demonstrations, and other supporting materials for the RISK project.
+
+## Data Organization
+
+```{r}
+#| echo: false
+#| message: false
+
+library(tidyverse)
+d <- read_csv("tmp.csv", col_types = cols())
+
+print(d)
+```
 
