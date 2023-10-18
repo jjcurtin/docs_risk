@@ -1,4 +1,14 @@
+---
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
 # Study Messages
+
+```{r}
+library(tidyverse)
+devtools::source_url("https://github.com/jjcurtin/lab_support/blob/main/print_kbl.R?raw=true")
+```
 
 Coco Yu
 
@@ -30,3 +40,13 @@ At intake, participants reported contact communications retrospectively. At each
 | cln_contacts.rmd    | analysis_risk/shared/scripts_cln/cln_contacts.rmd    | cleans up contact information for EDA                         | individual contact files (###\_Contacts.xlsx)  | contacts.csv    |
 | cln_sms_android.rmd | analysis_risk/shared/scripts_cln/cln_sms_android.rmd | cleans up text messages information on android device for EDA | up to three text message for each participant  | ###\_SMS\_#.xml |
 | cln_sms_ios.rmd     | analysis_risk/shared/scripts_cln/cln_sms_ios.rmd     | cleans up text messages information on ios device for EDA     | up to three text messages for each participant | ###\_SMS\_#.sql |
+
+
+## Data Dictionaries
+
+```{r}
+d <- read_csv("tmp.csv")
+
+d |> print_kbl()
+```
+

@@ -7,6 +7,13 @@
     "text": "Welcome\nThis web book is a collection of general documentation, demonstrations, and other supporting materials for the RISK project."
   },
   {
+    "objectID": "index.html#data-organization",
+    "href": "index.html#data-organization",
+    "title": "Project Notebook for RISK",
+    "section": "Data Organization",
+    "text": "Data Organization\n\n\n# A tibble: 2 × 3\n   var1  var2  var3\n  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;\n1     1     2     3\n2     3     5     6"
+  },
+  {
     "objectID": "study_gps.html#gps-procedure",
     "href": "study_gps.html#gps-procedure",
     "title": "1  Study GPS",
@@ -49,17 +56,17 @@
     "text": "2.3 Data processing\n\n2.3.1 Data cleaning and concatenating\n\n\n\n\n\n\n\n\n\n\nName\nPath\nFunction\nInput\nOutput\n\n\n\n\ncln_contacts.rmd\nanalysis_risk/shared/scripts_cln/cln_contacts.rmd\ncleans up contact information for EDA\nindividual contact files (###_Contacts.xlsx)\ncontacts.csv\n\n\ncln_sms_android.rmd\nanalysis_risk/shared/scripts_cln/cln_sms_android.rmd\ncleans up text messages information on android device for EDA\nup to three text message for each participant\n###_SMS_#.xml\n\n\ncln_sms_ios.rmd\nanalysis_risk/shared/scripts_cln/cln_sms_ios.rmd\ncleans up text messages information on ios device for EDA\nup to three text messages for each participant\n###_SMS_#.sql"
   },
   {
+    "objectID": "study_messages.html#data-dictionaries",
+    "href": "study_messages.html#data-dictionaries",
+    "title": "2  Study Messages",
+    "section": "2.4 Data Dictionaries",
+    "text": "2.4 Data Dictionaries\n\n\n\n\n\n\nvar1\nvar2\nvar3\n\n\n\n\n1\n2\n3\n\n\n3\n5\n6"
+  },
+  {
     "objectID": "study_insight.html#level-2-heading",
     "href": "study_insight.html#level-2-heading",
     "title": "3  Level 1 heading",
     "section": "3.1 Level 2 heading",
     "text": "3.1 Level 2 heading\n\n3.1.1 Level 3 heading\n\n3.1.1.1 Level 4 heading\nhere is some text"
-  },
-  {
-    "objectID": "index.html#data-organization",
-    "href": "index.html#data-organization",
-    "title": "Project Notebook for RISK",
-    "section": "Data Organization",
-    "text": "Data Organization\n\n\n# A tibble: 2 × 3\n   var1  var2  var3\n  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;\n1     1     2     3\n2     3     5     6"
   }
 ]
