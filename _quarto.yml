@@ -28,7 +28,11 @@ book:
   page-navigation: true
   chapters:
     - index.qmd
-    - part: "Studies"
+    - part: "Overview of Research Design and Methods"
+      chapters:
+        - study_procedure.qmd
+        - study_recruitment.qmd
+    - part: "Sub Studies"
       chapters:
         - study_gps.qmd
         - study_messages.qmd

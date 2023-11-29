@@ -1,0 +1,61 @@
+## Study Procedures {.unnumbered}
+
+## Study Procedure Chronology
+
+1. Recruitment via flyers, ads, and participating health care centers (Access Community Health Centers, Journey Mental Health Center)
+
+2. Phone screening, where general study interest, willingness to comply, and initial evaluation of eligibility was conducted.
+
+3. Screening visit with detailed overview of study requirements and informed consent.
+
+3. Intake visit
+
+4. Follow-up visits take place and 1, 2, and 3 months.
+
+5. Payment
+
+6. Debriefing
+
+
+![Summary of static, coarse, and densely sampled risk indicators.](sampling_freq.png)
+
+
+### Inclusion and Exclusion Criteria
+
+1. Participants must be aged 18 or older
+
+2. Participants must meet criteria for Alcohol Use Disorder with at least moderate severity (>4 DSM-5 criteria)
+
+3. At time of intake, participants must be abstinent from alcohol for at least 1 week and no longer than 2 months
+
+4. Participants will be excluded if they have a lifetime history of severe and persistent mental illness (SPMI; e.g., bipolar disorder, schizophrenia, or psychosis), but may have other co-morbid psychopathology (e.g., mood, anxiety, and other substance use disorders)
+
+5. Participants must be able to read and write in English
+
+6. Participants must be willing to use their own smartphone, if they have a smart phone compatible with our study technology, while enrolled in the study
+
+### Withdrawal Criteria
+
+No explicit withdrawal criteria were defined for the study; rather, discontinuation was considered on a case-by-case basis.
+
+## Simplified Version of Consent Form
+
+In-person visits:
+
+Participants will be asked to come to five visits over 3 months at our study site on the UW-Madison campus.
+
+
+At all five visits, participants will: 
+
+- Fill out surveys asking about your experiences with alcohol, recent alcohol use, and alcohol withdrawal, your recovery efforts and personal support network, your current life situation, stressors, and satisfaction, as well as demographic information, personality, mental health, and emotions
+
+- Be asked to complete approximately 20 surveys
+
+
+During the three months of study participation, participants will:
+
+- Complete 4x daily self-report surveys about alcohol use and commitment to alcohol abstinence, stressors, and emotion via smartphone
+
+- Complete 1x daily recovery question by recording a brief audio text message
+
+- Be asked to allow passive monitoring of behavior through smartphone apps (geolocation tracking, voice call and text message logs, and activity levels via accelerometer)

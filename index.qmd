@@ -5,17 +5,25 @@ editor_options:
 ---
 ## Welcome {.unnumbered}
 
-This web book is a collection of general documentation, demonstrations, and other supporting materials for the RISK project.
+This is a restrospective document describing how RISK was run. It includes a description of the study procedure at a high level and detailed information about study partners, technological tools used in the study, study procedure and administration, and processes for obtaining data. Where relevant, the document may refer readers to other documentation in the lab server. The purposes of this protocol are to 1) inform members of the research team, and 2) document study procedure and administration.
 
-## Data Organization
+## Basic Study Information and Personnel
 
-```{r}
-#| echo: false
-#| message: false
+**Title:** Dynamic, real-time prediction of alcohol use lapse using mHealth technologies
 
-library(tidyverse)
-d <- read_csv("tmp.csv", col_types = cols())
 
-print(d)
-```
+**Funding sponsor:** NIAAA (5R01AA024391-05)
 
+**PI name:** Dr. John J. Curtin
+
+**Co-investigators (if applicable):** David Gustafson, Jerry Zhu, Oguzhan Alagoz
+
+**Study coordinator:** Susan Schneck
+
+**Other members of the research team:** Sarah Sant’Ana, Kendra Paquette, Dr. Hannah Moshontz, Gaylen Fronk
+
+**Previous members of the research team:** [fill in]
+
+**Partner organizations:** CHESS
+
+**IRB Protocol Number:** 2015-0780

@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://github.io/jjcurtin/docs_risk/index.html</loc>
-    <lastmod>2023-10-18T16:35:59.624Z</lastmod>
+    <lastmod>2023-11-29T22:05:34.853Z</lastmod>
   </url>
   <url>
     <loc>https://github.io/jjcurtin/docs_risk/study_gps.html</loc>
@@ -15,5 +15,13 @@
   <url>
     <loc>https://github.io/jjcurtin/docs_risk/study_insight.html</loc>
     <lastmod>2023-10-18T16:35:59.652Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.io/jjcurtin/docs_risk/study_procedure.html</loc>
+    <lastmod>2023-11-29T22:06:55.233Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.io/jjcurtin/docs_risk/study_recruitment.html</loc>
+    <lastmod>2023-11-29T22:07:05.257Z</lastmod>
   </url>
 </urlset>
