@@ -1,0 +1,7 @@
+# Completed Manuscripts {.unnumbered}
+
+
+Wyant K, Sant’Ana SJ, Fronk GE, & Curtin JJ (under review). Psychopathol. Clin. Sci. **Machine learning models for temporally precise lapse prediction
+for alcohol use disorder.** [<a href = https://osf.io/preprints/psyarxiv/cgsf7/">Preprint</a>] [<a href = "https://osf.io/cjsvk/wiki/home/">OSF</a>]
+
+Wyant, K., Moshontz, H., Ward, S. B., Fronk, G. E., & Curtin, J. J. (2023). **Acceptability of Personal Sensing Among People With Alcohol Use Disorder: Observational Study.** JMIR mHealth and uHealth. [<a href = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10495858/">PubMed</a>] [<a href = "https://osf.io/w5h9y/">OSF</a>]

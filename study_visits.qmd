@@ -1,0 +1,112 @@
+# Study Visits {.unnumbered}
+
+Participants completed five in-person visits over the course of the study: a screening visit, an intake visit, and three follow-up visits.
+
+## Screening
+
+At the screening visit, participants were provided with a detailed study overview including all study requirements and provide informed consent.
+
+Two self-report measures were administered to confirm the potential participant’s alcohol use disorder diagnosis, establish that they are free from severe and persistent mental illness, confirm study eligibility via review of other inclusion/exclusion criteria described earlier, and document any other current psychiatric disorders:
+
+- The Symptom Checklist-90-Revised (SCL-90-R)
+
+- DSM-5 Symptom Checklist for Alcohol Use Disorder
+
+
+Additional information collected:
+
+- Demographic information
+
+- Measures of trait affect (Distress Tolerance Questionnaire, Anxiety Sensitivity Index, and Intolerance of Uncertainty Scale), family functioning (McMaster Family Assessment Device)
+
+- Measures of broadband personality traits (Multidimensional Personality Questionnaire)
+
+- Measures of static information about their alcohol use history (e.g., age of first use, age of regular use; number past quit attempts; date of last use)
+
+- A measure of recent alcohol problems (Young Adult Alcohol Problems Test)
+
+- A self-report measure on  illicit drug use during their lifetime (World Health Organization-The Alcohol, Smoking and Substance Involvement Screening Test)
+
+
+Participants are instructed that report of other drug use does not affect their ability to continue in the study or their study compensation. 
+Once deemed eligible and enrolled in the study, the intake visit is then scheduled. Participants are given a take-home questionnaire to provide a family geneogram and contact information and addresses of friends and family who support or detract from their abstinence efforts, to be returned and reviewed with study staff at intake.
+
+
+## Intake
+
+
+At intake (and FU #1, #2), participants reported:
+
+- Static information about trait affect (e.g.Depression Anxiety Stress Scale-21 and Perceived Stress Scale-10)
+
+- A measure of alcohol cravings and alcohol use and self-efficacy (Penn Alcohol Craving Scale and Alcohol Abstinence Self-Efficacy Scale)
+
+- Status of their current housing
+
+- Employment status and satisfaction
+
+- Quality of life questions
+
+- Relapse risk
+
+- Relationship status and satisfaction (Dyadic Adjustment Scale)
+
+- Use of other treatment and aftercare services
+
+- Commitment to abstinence
+
+
+**Unique to intake**, participants returned the take-home questionnaire with:
+
+- Their home address and contact information (home address, phone numbers) for friends, family members, and others with whom they have regular contact
+
+- Indication of friends, family, and other frequent contacts who support their recovery (Multidimensional Scale of Perceived Social Support)
+
+- Indication of frequent contacts who are high risk and/or detract from their recovery efforts (e.g., heavy-drinking friends/family; family/friends who undermine recovery efficacy)
+
+- Addresses of other high risk locations (e.g., preferred locations for alcohol purchase; preferred bars and other locations for alcohol use)
+
+
+*Address and contact information are updated at monthly follow-up visits as necessary.* 
+
+
+## Follow-up #1 and #2
+
+At FU #1 and #2 (and at intake), participants reported:
+
+- Static information about trait affect (e.g.Depression Anxiety Stress Scale-21 and Perceived Stress Scale-10)
+
+- A measure of alcohol cravings and alcohol use and self-efficacy (Penn Alcohol Craving Scale and Alcohol Abstinence Self-Efficacy Scale)
+
+- Status of their current housing
+
+- Employment status and satisfaction
+
+- Quality of life questions
+
+- Relapse risk
+
+- Relationship status and satisfaction (Dyadic Adjustment Scale)
+
+- Use of other treatment and aftercare services
+
+- Commitment to abstinence
+
+
+At FU #1 and #2 (and at FU #3), participants provided:
+
+- Self-report of the acceptability and burden associated with measurement of each of the risk indicators
+
+
+**Unique to FU #1, #2**, participants updated:
+
+- Reports of illicit drug use on the World Health Organization-The Alcohol, Smoking and Substance Involvement Screening Test by indicating if they have used or had an urge to use any illicit substances in the past 30 days
+
+## Follow-up #3
+
+At FU #3 (and at FU #1, #2), participants provided:
+
+- Self-report of the acceptability and burden associated with measurement of each of the risk indicators
+
+
+![Summary of static, coarse, and densely sampled risk indicators.](sampling_freq.png)

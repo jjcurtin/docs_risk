@@ -1,9 +1,1 @@
-# Level 1 heading
-
-## Level 2 heading
-
-### Level 3 heading
-
-#### Level 4 heading
-
-here is some text
+# Study insight {.unnumbered}

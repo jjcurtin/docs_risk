@@ -32,9 +32,11 @@ book:
       chapters:
         - study_procedure.qmd
         - study_recruitment.qmd
-    - part: "Sub Studies"
+        - study_visits.qmd
+    - part: "Studies"
       chapters:
         - study_gps.qmd
         - study_messages.qmd
         - study_insight.qmd
+        - completed_manuscripts.qmd
 

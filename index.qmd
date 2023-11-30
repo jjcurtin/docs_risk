@@ -3,7 +3,7 @@ output: html_document
 editor_options: 
   chunk_output_type: console
 ---
-## Welcome {.unnumbered}
+# Welcome {.unnumbered}
 
 This is a restrospective document describing how RISK was run. It includes a description of the study procedure at a high level and detailed information about study partners, technological tools used in the study, study procedure and administration, and processes for obtaining data. Where relevant, the document may refer readers to other documentation in the lab server. The purposes of this protocol are to 1) inform members of the research team, and 2) document study procedure and administration.
 

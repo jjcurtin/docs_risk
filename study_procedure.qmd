@@ -1,4 +1,4 @@
-## Study Procedures {.unnumbered}
+# Study Procedures {.unnumbered}
 
 ## Study Procedure Chronology
 
@@ -14,10 +14,7 @@
 
 5. Payment
 
-6. Debriefing
-
-
-![Summary of static, coarse, and densely sampled risk indicators.](sampling_freq.png)
+6. Debriefing (follow-up #3 visit)
 
 
 ### Inclusion and Exclusion Criteria

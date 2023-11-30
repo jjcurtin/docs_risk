@@ -1,4 +1,4 @@
-# Study GPS
+# Study GPS {.unnumbered}
 Claire Punturieri
 
 Last updated: 10/23/2023
@@ -40,13 +40,7 @@ used to capture participant geolocation data because the app was bought out by <
 
 ### Raw file tracker
 
-```{r}
-d <- read.csv("gps/qc.csv")
-d |>
-  kbl() |>
-    kable_styling() |>
-      scroll_box(width = "150%", height = "400px")
-```  
+
 
 
 ## Data processing
