@@ -28,15 +28,15 @@ book:
   page-navigation: true
   chapters:
     - index.qmd
-    - part: "Overview of Research Design and Methods"
+    - part: "Overview"
       chapters:
         - study_procedure.qmd
         - study_recruitment.qmd
         - study_visits.qmd
+        - completed_manuscripts.qmd
     - part: "Studies"
       chapters:
         - study_gps.qmd
         - study_messages.qmd
         - study_insight.qmd
-        - completed_manuscripts.qmd
 

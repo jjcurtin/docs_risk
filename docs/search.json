@@ -16,49 +16,49 @@
   {
     "objectID": "study_gps.html#gps-procedure",
     "href": "study_gps.html#gps-procedure",
-    "title": "Study GPS",
+    "title": "GPS",
     "section": "GPS procedure",
     "text": "GPS procedure\nParticipants current location was continuously tracked via GPS and WiFi positioning technology on individual cell phones and available to the A-CHESS program for the study duration (a total of three months of mobile monitoring).\nAt monthly intervals, during follow-up visits (at month 1, 2, and 3), participants were asked to identify whether frequently visited locations (i.e., &gt;2 times per month) were helpful or harmful to their recovery and what emotion was associated with the location (i.e., positive, negative, or mixed).\nMoves was used to track data from start of study until July 2018, after which FollowMee was used to capture participant geolocation data because the app was bought out by Facebook, and then subsequently was deprecated."
   },
   {
     "objectID": "study_gps.html#data-files",
     "href": "study_gps.html#data-files",
-    "title": "Study GPS",
+    "title": "GPS",
     "section": "Data Files",
     "text": "Data Files\n\n\n\n\n\n\n\n\nData type\nLevel\nLocation\n\n\n\n\nRaw GPS\nIndividual\nFor Moves: studydata/risk/data_raw/**/**_GPS.gpx, studydata/risk/data_raw/**/**_MOVES.zip, studydata/risk/data_raw/**/**_GPSMovesProcessed.rds; For FollowMee: studydata/risk/data_raw/**/**_GPSFollowRaw.rds\n\n\nRaw GPS\nIndividual\nstudydata/risk/data_raw/**/**_Locations.xlsx\n\n\nRaw GPS\nGroup\nstudydata/risk/data_processed/shared/gps.csv\n\n\nRaw GPS\nGroup\nstudydata/risk/data_processed/shared/locations.csv\n\n\nEnriched GPS\nGroup\nstudydata/risk/data_processed/gps/gps_enriched.csv.xz\n\n\n\n\nRaw file tracker"
   },
   {
     "objectID": "study_gps.html#data-processing",
     "href": "study_gps.html#data-processing",
-    "title": "Study GPS",
+    "title": "GPS",
     "section": "Data processing",
     "text": "Data processing\n\n\nData cleaning and concatenating\n\n\n\n\n\n\n\n\n\n\nName \nPath \nFunction \nInput \nOutput \n\n\n\n\ncln_gps.Rmd\nshared/scripts_cln/\ncreates the analysis gps dataset and conducts EDA\nindividual gps data files (studydata/risk/data_raw/**/**_GPS.gpx)\ngps.csv, gps.rds\n\n\ncln_locations.Rmd\nshared/scripts_cln/\nopens the individual raw excel files for frequent locations in the individual subject folders, merges them, and then does EDA\nindividual location files (studydata/risk/data_raw/**/**_Locations.xlsx)\nlocations.csv\n\n\nmak_study_dates.Rmd\ngps/mak/\ncreate list of important study dates\nvisit_dates.csv, ema_morning.csv, ema_later.csv\nstudy_dates.csv\n\n\nmak_labels_for_windows.Rmd\ngps/mak/\ncreates lapse labels at 1 hour window duration, 1 day window duration, and 1 week window duration.\nlapses.csv, study_dates.csv\nlabels_1hour.csv(.xz), labels_1day.csv(.xz), labels 1week.csv(.xz)\n\n\nmak_gps_enriched.Rmd\ngps/mak/\naggregates gps files for all subjects and then matches each geolocation to its nearest context\nstudy_dates.csv, locations.csv, gps.csv\nstudy_dates.csv, locations.csv, gps.csv\n\n\nmak_samples.Rmd\ngps/mak/\nchecks the GPS data and finalizes an overall sample\nstudy_dates.csv, locations.csv, gps_enriched.csv.xz\n# subj with satisfactory/missing data, days of missing GPS\n\n\n\n\n\nData cleaning/concatenating procedures for Moves data\n\n\nData cleaning/concatenating procedures for FollowMee data\n\n\nModeling scripts\n\n\n\n\n\n\n\n\n\n\n\nName \nPath \nFunction \nInput \nOutput \n\n\n\n\nmak_features_combined.Rmd\ngps/mak/\naggregates all CHTC features and checks for missing jobs and other EDA\nreturned CHTC files (features, error, out)\nfeatures_{WINDOW}.csv\n\n\nmak_training_metrics.Rmd\ngps/mak/\naggregates all results/metrics for a batch or batches of jobs that train all model configurations for a specific outcome/label window\njobs.csv, all result CSVs\nmodel comparisons (?)\n\n\nmak_rset.Rmd\ngps/mak/\nmakes and saves an RSET object that includes train/test splits defined by GA Tech for use across our labs\nlabels_05.csv, training_ids.csv\nrset.rds"
   },
   {
     "objectID": "study_messages.html#communications-collection-procedure",
     "href": "study_messages.html#communications-collection-procedure",
-    "title": "Study Messages",
+    "title": "Messages",
     "section": "Communications collection procedure",
     "text": "Communications collection procedure\nParticipants completed a semi-structured interview at intake and each of the three follow-up visits over the course of three months that collects information about frequently communicated contacts. Interview questions include contextual information about each contact was used to get drinking (e.g., past-drinking history with a contact) and risk-related information (e.g., pleasantness or unpleasantness of interacting with a contact).\nAt intake, participants reported contact communications retrospectively. At each one-month follow-up visit, the researchers directly backed up the participants’ non-deleted text messages and phone call logs from phone. Contextual questions about newly identified people were asked."
   },
   {
     "objectID": "study_messages.html#data-files",
     "href": "study_messages.html#data-files",
-    "title": "Study Messages",
+    "title": "Messages",
     "section": "Data Files",
     "text": "Data Files\n\n\n\n\n\n\n\n\nData type\nLevel\nLocation\n\n\n\n\nRaw Contact Information\nIndividual\nstudydata/risk/data_raw/###/###_Contacts.xlsx\n\n\nRaw SMS Messages on IOS\nIndividual\nstudydata/risk/data_raw/###/###_SMS_#.sql\n\n\nRaw SMS Messages on Android\nIndividual\nstudydata/risk/data_raw/###/###_SMS_#.xml\n\n\nProcessed Contact Information\nIndividual\nstudydata/risk/data_processed/shared/contacts.csv\n\n\nProcessed SMS Messages on Android\nIndividual\nstudydata/risk/data_processed/shared/sms_android.csv\n\n\nProcessed SMS Messages on IOS\nIndividual\nstudydata/risk/data_processed/shared/sms_ios.csv"
   },
   {
     "objectID": "study_messages.html#data-processing",
     "href": "study_messages.html#data-processing",
-    "title": "Study Messages",
+    "title": "Messages",
     "section": "Data processing",
     "text": "Data processing\n\nData cleaning and concatenating\n\n\n\n\n\n\n\n\n\n\nName\nPath\nFunction\nInput\nOutput\n\n\n\n\ncln_contacts.rmd\nanalysis_risk/shared/scripts_cln/cln_contacts.rmd\ncleans up contact information for EDA\nindividual contact files (###_Contacts.xlsx)\ncontacts.csv\n\n\ncln_sms_android.rmd\nanalysis_risk/shared/scripts_cln/cln_sms_android.rmd\ncleans up text messages information on android device for EDA\nup to three text message for each participant\n###_SMS_#.xml\n\n\ncln_sms_ios.rmd\nanalysis_risk/shared/scripts_cln/cln_sms_ios.rmd\ncleans up text messages information on ios device for EDA\nup to three text messages for each participant\n###_SMS_#.sql"
   },
   {
     "objectID": "study_messages.html#data-dictionaries",
     "href": "study_messages.html#data-dictionaries",
-    "title": "Study Messages",
+    "title": "Messages",
     "section": "Data Dictionaries",
     "text": "Data Dictionaries\n\n\n\n\n\n\nvar1\nvar2\nvar3\n\n\n\n\n1\n2\n3\n\n\n3\n5\n6"
   },
@@ -79,28 +79,28 @@
   {
     "objectID": "study_procedure.html#study-procedure-chronology",
     "href": "study_procedure.html#study-procedure-chronology",
-    "title": "Study Procedures",
+    "title": "Procedures",
     "section": "Study Procedure Chronology",
     "text": "Study Procedure Chronology\n\nRecruitment via flyers, ads, and participating health care centers (Access Community Health Centers, Journey Mental Health Center)\nPhone screening, where general study interest, willingness to comply, and initial evaluation of eligibility was conducted.\nScreening visit with detailed overview of study requirements and informed consent.\nIntake visit\nFollow-up visits take place and 1, 2, and 3 months.\nPayment\nDebriefing (follow-up #3 visit)\n\n\nInclusion and Exclusion Criteria\n\nParticipants must be aged 18 or older\nParticipants must meet criteria for Alcohol Use Disorder with at least moderate severity (&gt;4 DSM-5 criteria)\nAt time of intake, participants must be abstinent from alcohol for at least 1 week and no longer than 2 months\nParticipants will be excluded if they have a lifetime history of severe and persistent mental illness (SPMI; e.g., bipolar disorder, schizophrenia, or psychosis), but may have other co-morbid psychopathology (e.g., mood, anxiety, and other substance use disorders)\nParticipants must be able to read and write in English\nParticipants must be willing to use their own smartphone, if they have a smart phone compatible with our study technology, while enrolled in the study\n\n\n\nWithdrawal Criteria\nNo explicit withdrawal criteria were defined for the study; rather, discontinuation was considered on a case-by-case basis."
   },
   {
     "objectID": "study_procedure.html#simplified-version-of-consent-form",
     "href": "study_procedure.html#simplified-version-of-consent-form",
-    "title": "Study Procedures",
+    "title": "Procedures",
     "section": "Simplified Version of Consent Form",
     "text": "Simplified Version of Consent Form\nIn-person visits:\nParticipants will be asked to come to five visits over 3 months at our study site on the UW-Madison campus.\nAt all five visits, participants will:\n\nFill out surveys asking about your experiences with alcohol, recent alcohol use, and alcohol withdrawal, your recovery efforts and personal support network, your current life situation, stressors, and satisfaction, as well as demographic information, personality, mental health, and emotions\nBe asked to complete approximately 20 surveys\n\nDuring the three months of study participation, participants will:\n\nComplete 4x daily self-report surveys about alcohol use and commitment to alcohol abstinence, stressors, and emotion via smartphone\nComplete 1x daily recovery question by recording a brief audio text message\nBe asked to allow passive monitoring of behavior through smartphone apps (geolocation tracking, voice call and text message logs, and activity levels via accelerometer)"
   },
   {
     "objectID": "study_recruitment.html#recruitment-sites",
     "href": "study_recruitment.html#recruitment-sites",
-    "title": "Study Recruitment",
+    "title": "Recruitment",
     "section": "Recruitment sites",
     "text": "Recruitment sites\nFive local treatment sites across two large healthcare centers partnered with ARC for recruitment: Access Community Health Centers and Journey Mental Health Center.\nThese sites were selected to support recruitment of a diverse set of patients (e.g., both genders; racially diverse; AUD only vs. dual diagnosis). They were also selected to provide adequate patient flow for study recruitment and patient access to the study site in Madison, WI."
   },
   {
     "objectID": "study_recruitment.html#advertising",
     "href": "study_recruitment.html#advertising",
-    "title": "Study Recruitment",
+    "title": "Recruitment",
     "section": "Advertising",
     "text": "Advertising\nRecruitment of the community at large was conducted by posting flyers or ads in places likely to be seen by the target population (Alcoholics Anonymous meetings, Metro buses, and online using sites like Facebook and Craigslist). The goal of community recruitment is to include participants using a wider variety of treatment methods to achieve sobriety, ranging from the structured clinical outpatient visits at the above recruiting sites, to self-directed abstinence methods without formal support."
   },
@@ -114,30 +114,30 @@
   {
     "objectID": "study_visits.html#screening",
     "href": "study_visits.html#screening",
-    "title": "Study Visits",
+    "title": "Visits",
     "section": "Screening",
     "text": "Screening\nAt the screening visit, participants were provided with a detailed study overview including all study requirements and provide informed consent.\nTwo self-report measures were administered to confirm the potential participant’s alcohol use disorder diagnosis, establish that they are free from severe and persistent mental illness, confirm study eligibility via review of other inclusion/exclusion criteria described earlier, and document any other current psychiatric disorders:\n\nThe Symptom Checklist-90-Revised (SCL-90-R)\nDSM-5 Symptom Checklist for Alcohol Use Disorder\n\nAdditional information collected:\n\nDemographic information\nMeasures of trait affect (Distress Tolerance Questionnaire, Anxiety Sensitivity Index, and Intolerance of Uncertainty Scale), family functioning (McMaster Family Assessment Device)\nMeasures of broadband personality traits (Multidimensional Personality Questionnaire)\nMeasures of static information about their alcohol use history (e.g., age of first use, age of regular use; number past quit attempts; date of last use)\nA measure of recent alcohol problems (Young Adult Alcohol Problems Test)\nA self-report measure on illicit drug use during their lifetime (World Health Organization-The Alcohol, Smoking and Substance Involvement Screening Test)\n\nParticipants are instructed that report of other drug use does not affect their ability to continue in the study or their study compensation. Once deemed eligible and enrolled in the study, the intake visit is then scheduled. Participants are given a take-home questionnaire to provide a family geneogram and contact information and addresses of friends and family who support or detract from their abstinence efforts, to be returned and reviewed with study staff at intake."
   },
   {
     "objectID": "study_visits.html#intake",
     "href": "study_visits.html#intake",
-    "title": "Study Visits",
+    "title": "Visits",
     "section": "Intake",
     "text": "Intake\nAt intake (and FU #1, #2), participants reported:\n\nStatic information about trait affect (e.g.Depression Anxiety Stress Scale-21 and Perceived Stress Scale-10)\nA measure of alcohol cravings and alcohol use and self-efficacy (Penn Alcohol Craving Scale and Alcohol Abstinence Self-Efficacy Scale)\nStatus of their current housing\nEmployment status and satisfaction\nQuality of life questions\nRelapse risk\nRelationship status and satisfaction (Dyadic Adjustment Scale)\nUse of other treatment and aftercare services\nCommitment to abstinence\n\nUnique to intake, participants returned the take-home questionnaire with:\n\nTheir home address and contact information (home address, phone numbers) for friends, family members, and others with whom they have regular contact\nIndication of friends, family, and other frequent contacts who support their recovery (Multidimensional Scale of Perceived Social Support)\nIndication of frequent contacts who are high risk and/or detract from their recovery efforts (e.g., heavy-drinking friends/family; family/friends who undermine recovery efficacy)\nAddresses of other high risk locations (e.g., preferred locations for alcohol purchase; preferred bars and other locations for alcohol use)\n\nAddress and contact information are updated at monthly follow-up visits as necessary."
   },
   {
     "objectID": "study_visits.html#follow-up-1-and-2",
     "href": "study_visits.html#follow-up-1-and-2",
-    "title": "Study Visits",
+    "title": "Visits",
     "section": "Follow-up #1 and #2",
     "text": "Follow-up #1 and #2\nAt FU #1 and #2 (and at intake), participants reported:\n\nStatic information about trait affect (e.g.Depression Anxiety Stress Scale-21 and Perceived Stress Scale-10)\nA measure of alcohol cravings and alcohol use and self-efficacy (Penn Alcohol Craving Scale and Alcohol Abstinence Self-Efficacy Scale)\nStatus of their current housing\nEmployment status and satisfaction\nQuality of life questions\nRelapse risk\nRelationship status and satisfaction (Dyadic Adjustment Scale)\nUse of other treatment and aftercare services\nCommitment to abstinence\n\nAt FU #1 and #2 (and at FU #3), participants provided:\n\nSelf-report of the acceptability and burden associated with measurement of each of the risk indicators\n\nUnique to FU #1, #2, participants updated:\n\nReports of illicit drug use on the World Health Organization-The Alcohol, Smoking and Substance Involvement Screening Test by indicating if they have used or had an urge to use any illicit substances in the past 30 days"
   },
   {
     "objectID": "study_visits.html#follow-up-3",
     "href": "study_visits.html#follow-up-3",
-    "title": "Study Visits",
+    "title": "Visits",
     "section": "Follow-up #3",
-    "text": "Follow-up #3\nAt FU #3 (and at FU #1, #2), participants provided:\n\nSelf-report of the acceptability and burden associated with measurement of each of the risk indicators\n\n\n\n\nSummary of static, coarse, and densely sampled risk indicators."
+    "text": "Follow-up #3\nAt FU #3 (and at FU #1, #2), participants provided:\n\nSelf-report of the acceptability and burden associated with measurement of each of the risk indicators"
   },
   {
     "objectID": "index.html",

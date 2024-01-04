@@ -1,6 +1,8 @@
-# Study Visits {.unnumbered}
+# Visits {.unnumbered}
 
 Participants completed five in-person visits over the course of the study: a screening visit, an intake visit, and three follow-up visits.
+
+![Summary of static, coarse, and densely sampled risk indicators.](sampling_freq.png)
 
 ## Screening
 
@@ -107,6 +109,3 @@ At FU #1 and #2 (and at FU #3), participants provided:
 At FU #3 (and at FU #1, #2), participants provided:
 
 - Self-report of the acceptability and burden associated with measurement of each of the risk indicators
-
-
-![Summary of static, coarse, and densely sampled risk indicators.](sampling_freq.png)
