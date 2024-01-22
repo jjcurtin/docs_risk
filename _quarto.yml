@@ -33,6 +33,7 @@ book:
         - study_procedure.qmd
         - study_recruitment.qmd
         - study_visits.qmd
+        - documents.qmd
         - completed_manuscripts.qmd
     - part: "Studies"
       chapters:

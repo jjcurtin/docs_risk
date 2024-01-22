@@ -2,7 +2,7 @@
 
 ## Study Procedure Chronology
 
-1. Recruitment via flyers, ads, and participating health care centers (Access Community Health Centers, Journey Mental Health Center)
+1. Recruitment via flyers, ads (Metro busses, Fox 47 web advertisements, TV advertisements), and participating health care centers (Access Community Health Centers, Journey Mental Health Center)
 
 2. Phone screening, where general study interest, willingness to comply, and initial evaluation of eligibility was conducted.
 
@@ -46,7 +46,7 @@ At all five visits, participants will:
 
 - Fill out surveys asking about your experiences with alcohol, recent alcohol use, and alcohol withdrawal, your recovery efforts and personal support network, your current life situation, stressors, and satisfaction, as well as demographic information, personality, mental health, and emotions
 
-- Be asked to complete approximately 20 surveys
+- Be asked to complete approximately 20 different validated measures over three batteries of surveys
 
 
 During the three months of study participation, participants will:
@@ -55,4 +55,4 @@ During the three months of study participation, participants will:
 
 - Complete 1x daily recovery question by recording a brief audio text message
 
-- Be asked to allow passive monitoring of behavior through smartphone apps (geolocation tracking, voice call and text message logs, and activity levels via accelerometer)
+- Be asked to allow passive monitoring of behavior through smartphone apps (geolocation tracking, voice call and text message logs, and activity levels via accelerometer); these data will be downloaded directly onto lab computers at each monthly visit

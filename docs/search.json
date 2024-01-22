@@ -81,14 +81,14 @@
     "href": "study_procedure.html#study-procedure-chronology",
     "title": "Procedures",
     "section": "Study Procedure Chronology",
-    "text": "Study Procedure Chronology\n\nRecruitment via flyers, ads, and participating health care centers (Access Community Health Centers, Journey Mental Health Center)\nPhone screening, where general study interest, willingness to comply, and initial evaluation of eligibility was conducted.\nScreening visit with detailed overview of study requirements and informed consent.\nIntake visit\nFollow-up visits take place and 1, 2, and 3 months.\nPayment\nDebriefing (follow-up #3 visit)\n\n\nInclusion and Exclusion Criteria\n\nParticipants must be aged 18 or older\nParticipants must meet criteria for Alcohol Use Disorder with at least moderate severity (&gt;4 DSM-5 criteria)\nAt time of intake, participants must be abstinent from alcohol for at least 1 week and no longer than 2 months\nParticipants will be excluded if they have a lifetime history of severe and persistent mental illness (SPMI; e.g., bipolar disorder, schizophrenia, or psychosis), but may have other co-morbid psychopathology (e.g., mood, anxiety, and other substance use disorders)\nParticipants must be able to read and write in English\nParticipants must be willing to use their own smartphone, if they have a smart phone compatible with our study technology, while enrolled in the study\n\n\n\nWithdrawal Criteria\nNo explicit withdrawal criteria were defined for the study; rather, discontinuation was considered on a case-by-case basis."
+    "text": "Study Procedure Chronology\n\nRecruitment via flyers, ads (Metro busses, Fox 47 web advertisements, TV advertisements), and participating health care centers (Access Community Health Centers, Journey Mental Health Center)\nPhone screening, where general study interest, willingness to comply, and initial evaluation of eligibility was conducted.\nScreening visit with detailed overview of study requirements and informed consent.\nIntake visit\nFollow-up visits take place and 1, 2, and 3 months.\nPayment\nDebriefing (follow-up #3 visit)\n\n\nInclusion and Exclusion Criteria\n\nParticipants must be aged 18 or older\nParticipants must meet criteria for Alcohol Use Disorder with at least moderate severity (&gt;4 DSM-5 criteria)\nAt time of intake, participants must be abstinent from alcohol for at least 1 week and no longer than 2 months\nParticipants will be excluded if they have a lifetime history of severe and persistent mental illness (SPMI; e.g., bipolar disorder, schizophrenia, or psychosis), but may have other co-morbid psychopathology (e.g., mood, anxiety, and other substance use disorders)\nParticipants must be able to read and write in English\nParticipants must be willing to use their own smartphone, if they have a smart phone compatible with our study technology, while enrolled in the study\n\n\n\nWithdrawal Criteria\nNo explicit withdrawal criteria were defined for the study; rather, discontinuation was considered on a case-by-case basis."
   },
   {
     "objectID": "study_procedure.html#simplified-version-of-consent-form",
     "href": "study_procedure.html#simplified-version-of-consent-form",
     "title": "Procedures",
     "section": "Simplified Version of Consent Form",
-    "text": "Simplified Version of Consent Form\nIn-person visits:\nParticipants will be asked to come to five visits over 3 months at our study site on the UW-Madison campus.\nAt all five visits, participants will:\n\nFill out surveys asking about your experiences with alcohol, recent alcohol use, and alcohol withdrawal, your recovery efforts and personal support network, your current life situation, stressors, and satisfaction, as well as demographic information, personality, mental health, and emotions\nBe asked to complete approximately 20 surveys\n\nDuring the three months of study participation, participants will:\n\nComplete 4x daily self-report surveys about alcohol use and commitment to alcohol abstinence, stressors, and emotion via smartphone\nComplete 1x daily recovery question by recording a brief audio text message\nBe asked to allow passive monitoring of behavior through smartphone apps (geolocation tracking, voice call and text message logs, and activity levels via accelerometer)"
+    "text": "Simplified Version of Consent Form\nIn-person visits:\nParticipants will be asked to come to five visits over 3 months at our study site on the UW-Madison campus.\nAt all five visits, participants will:\n\nFill out surveys asking about your experiences with alcohol, recent alcohol use, and alcohol withdrawal, your recovery efforts and personal support network, your current life situation, stressors, and satisfaction, as well as demographic information, personality, mental health, and emotions\nBe asked to complete approximately 20 different validated measures over three batteries of surveys\n\nDuring the three months of study participation, participants will:\n\nComplete 4x daily self-report surveys about alcohol use and commitment to alcohol abstinence, stressors, and emotion via smartphone\nComplete 1x daily recovery question by recording a brief audio text message\nBe asked to allow passive monitoring of behavior through smartphone apps (geolocation tracking, voice call and text message logs, and activity levels via accelerometer); these data will be downloaded directly onto lab computers at each monthly visit"
   },
   {
     "objectID": "study_recruitment.html#recruitment-sites",
@@ -145,5 +145,26 @@
     "title": "Project Notebook for RISK",
     "section": "",
     "text": "Welcome\nThis is a restrospective document describing how RISK was run. It includes a description of the study procedure at a high level and detailed information about study partners, technological tools used in the study, study procedure and administration, and processes for obtaining data. Where relevant, the document may refer readers to other documentation in the lab server. The purposes of this protocol are to 1) inform members of the research team, and 2) document study procedure and administration."
+  },
+  {
+    "objectID": "documents.html#ra-documents",
+    "href": "documents.html#ra-documents",
+    "title": "Documents",
+    "section": "RA Documents",
+    "text": "RA Documents\nStudy visit SOPs:\nScreen\nIntake\nFollow-Up 1&2\nFollow-Up 3\nSurvey registration and distribution:\nSet-up, registration, and download\nSending ID Follow-Up 1&2 batteries to participants\nData transfer and management:\nEnrollment database management\nParticipant folders\nInterview data entry\nAudio and SMS download\nChecking audio files\nTransfer of audio files\nFollowMee final visit instructions (data download, removal of app)\nEmergencies:\nClinical crisis documentation"
+  },
+  {
+    "objectID": "documents.html#participant-documents",
+    "href": "documents.html#participant-documents",
+    "title": "Documents",
+    "section": "Participant Documents",
+    "text": "Participant Documents"
+  },
+  {
+    "objectID": "documents.html#participant-interviews-surveys",
+    "href": "documents.html#participant-interviews-surveys",
+    "title": "Documents",
+    "section": "Participant Interviews & Surveys",
+    "text": "Participant Interviews & Surveys\nScreen 1 2\nIntake\nFollow-Up 1&2\nFollow-Up 3\nRecovery Interview Forms\nEMA Morning\nEMA Later"
   }
 ]
