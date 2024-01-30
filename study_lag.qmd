@@ -20,7 +20,7 @@ Labels are complete
 
 - The first possible label for each participant starts `24 hours + lag time (in hours)` after their study start date.   
 - The last possible label is 7 days before their last EMA (study end date/time) because we are predicting one week windows and want a each epoch to contain a full 7 days.     
-- no_lape labels that are within 24 hours of a lapse are removed.    
+- no_lapse labels that are within 24 hours of a lapse are removed.    
 
 ### Feature Decisions
 
