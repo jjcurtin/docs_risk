@@ -1,0 +1,33 @@
+# Lag {.unnumbered}
+Kendra Wyant
+
+Last updated: 1/30/2024
+
+### Study Overview
+
+This study looks at EMA features for lagged prediction of lapse probability in the next week at the following hour intervals:   
+
+- 0 (this is equivalent to our week model in the EMA paper)
+- 24 (1 day out)    
+- 72 (3 days out)
+- 168 (1 week out)
+- 336 (2 weeks out)   
+
+
+### Label Decisions
+
+Labels are complete     
+
+- The first possible label for each participant starts `24 hours + lag time (in hours)` after their study start date.   
+- The last possible label is 7 days before their last EMA (study end date/time) because we are predicting one week windows and want a each epoch to contain a full 7 days.     
+- no_lape labels that are within 24 hours of a lapse are removed.    
+
+### Feature Decisions
+
+Features are complete    
+
+- Features were made on CHTC. We are using the same feature set that was used in the EMA study except there is now a buffer (lag) between the epoch of features sampled and prediction window.
+- `eda_demo_lag_functions` confirms the lag in our feature functions are working as expected.   
+- Consider adding income and employment features?
+
+### Modeling Decisions
