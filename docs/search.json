@@ -1,17 +1,94 @@
 [
   {
-    "objectID": "index.html#welcome",
-    "href": "index.html#welcome",
+    "objectID": "index.html",
+    "href": "index.html",
     "title": "Project Notebook for RISK",
-    "section": "Welcome",
+    "section": "",
     "text": "Welcome\nThis is a restrospective document describing how RISK was run. It includes a description of the study procedure at a high level and detailed information about study partners, technological tools used in the study, study procedure and administration, and processes for obtaining data. Where relevant, the document may refer readers to other documentation in the lab server. The purposes of this protocol are to 1) inform members of the research team, and 2) document study procedure and administration."
   },
   {
-    "objectID": "index.html#data-organization",
-    "href": "index.html#data-organization",
+    "objectID": "index.html#basic-study-information-and-personnel",
+    "href": "index.html#basic-study-information-and-personnel",
     "title": "Project Notebook for RISK",
-    "section": "Data Organization",
-    "text": "Data Organization\n\n\n# A tibble: 2 × 3\n   var1  var2  var3\n  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;\n1     1     2     3\n2     3     5     6"
+    "section": "Basic Study Information and Personnel",
+    "text": "Basic Study Information and Personnel\nTitle: Dynamic, real-time prediction of alcohol use lapse using mHealth technologies\nFunding sponsor: NIAAA (5R01AA024391-05)\nPI name: Dr. John J. Curtin\nCo-investigators (if applicable): David Gustafson, Jerry Zhu, Oguzhan Alagoz\nStudy coordinator: Susan Schneck\nOther members of the research team: Sarah Sant’Ana, Kendra Paquette, Dr. Hannah Moshontz, Gaylen Fronk\nPrevious members of the research team: [fill in]\nPartner organizations: CHESS\nIRB Protocol Number: 2015-0780"
+  },
+  {
+    "objectID": "study_procedure.html#study-procedure-chronology",
+    "href": "study_procedure.html#study-procedure-chronology",
+    "title": "Procedures",
+    "section": "Study Procedure Chronology",
+    "text": "Study Procedure Chronology\n\nRecruitment via flyers, ads (Metro busses, Fox 47 web advertisements, TV advertisements), and participating health care centers (Access Community Health Centers, Journey Mental Health Center)\nPhone screening, where general study interest, willingness to comply, and initial evaluation of eligibility was conducted.\nScreening visit with detailed overview of study requirements and informed consent.\nIntake visit\nFollow-up visits take place and 1, 2, and 3 months.\nPayment\nDebriefing (follow-up #3 visit)\n\n\nInclusion and Exclusion Criteria\n\nParticipants must be aged 18 or older\nParticipants must meet criteria for Alcohol Use Disorder with at least moderate severity (&gt;4 DSM-5 criteria)\nAt time of intake, participants must be abstinent from alcohol for at least 1 week and no longer than 2 months\nParticipants will be excluded if they have a lifetime history of severe and persistent mental illness (SPMI; e.g., bipolar disorder, schizophrenia, or psychosis), but may have other co-morbid psychopathology (e.g., mood, anxiety, and other substance use disorders)\nParticipants must be able to read and write in English\nParticipants must be willing to use their own smartphone, if they have a smart phone compatible with our study technology, while enrolled in the study\n\n\n\nWithdrawal Criteria\nNo explicit withdrawal criteria were defined for the study; rather, discontinuation was considered on a case-by-case basis."
+  },
+  {
+    "objectID": "study_procedure.html#simplified-version-of-consent-form",
+    "href": "study_procedure.html#simplified-version-of-consent-form",
+    "title": "Procedures",
+    "section": "Simplified Version of Consent Form",
+    "text": "Simplified Version of Consent Form\nIn-person visits:\nParticipants will be asked to come to five visits over 3 months at our study site on the UW-Madison campus.\nAt all five visits, participants will:\n\nFill out surveys asking about your experiences with alcohol, recent alcohol use, and alcohol withdrawal, your recovery efforts and personal support network, your current life situation, stressors, and satisfaction, as well as demographic information, personality, mental health, and emotions\nBe asked to complete approximately 20 different validated measures over three batteries of surveys\n\nDuring the three months of study participation, participants will:\n\nComplete 4x daily self-report surveys about alcohol use and commitment to alcohol abstinence, stressors, and emotion via smartphone\nComplete 1x daily recovery question by recording a brief audio text message\nBe asked to allow passive monitoring of behavior through smartphone apps (geolocation tracking, voice call and text message logs, and activity levels via accelerometer); these data will be downloaded directly onto lab computers at each monthly visit"
+  },
+  {
+    "objectID": "study_recruitment.html#recruitment-sites",
+    "href": "study_recruitment.html#recruitment-sites",
+    "title": "Recruitment",
+    "section": "Recruitment sites",
+    "text": "Recruitment sites\nFive local treatment sites across two large healthcare centers partnered with ARC for recruitment: Access Community Health Centers and Journey Mental Health Center.\nThese sites were selected to support recruitment of a diverse set of patients (e.g., both genders; racially diverse; AUD only vs. dual diagnosis). They were also selected to provide adequate patient flow for study recruitment and patient access to the study site in Madison, WI."
+  },
+  {
+    "objectID": "study_recruitment.html#advertising",
+    "href": "study_recruitment.html#advertising",
+    "title": "Recruitment",
+    "section": "Advertising",
+    "text": "Advertising\nRecruitment of the community at large was conducted by posting flyers or ads in places likely to be seen by the target population (Alcoholics Anonymous meetings, Metro buses, and online using sites like Facebook and Craigslist). The goal of community recruitment is to include participants using a wider variety of treatment methods to achieve sobriety, ranging from the structured clinical outpatient visits at the above recruiting sites, to self-directed abstinence methods without formal support."
+  },
+  {
+    "objectID": "study_visits.html#screening",
+    "href": "study_visits.html#screening",
+    "title": "Visits",
+    "section": "Screening",
+    "text": "Screening\nAt the screening visit, participants were provided with a detailed study overview including all study requirements and provide informed consent.\nTwo self-report measures were administered to confirm the potential participant’s alcohol use disorder diagnosis, establish that they are free from severe and persistent mental illness, confirm study eligibility via review of other inclusion/exclusion criteria described earlier, and document any other current psychiatric disorders:\n\nThe Symptom Checklist-90-Revised (SCL-90-R)\nDSM-5 Symptom Checklist for Alcohol Use Disorder\n\nAdditional information collected:\n\nDemographic information\nMeasures of trait affect (Distress Tolerance Questionnaire, Anxiety Sensitivity Index, and Intolerance of Uncertainty Scale), family functioning (McMaster Family Assessment Device)\nMeasures of broadband personality traits (Multidimensional Personality Questionnaire)\nMeasures of static information about their alcohol use history (e.g., age of first use, age of regular use; number past quit attempts; date of last use)\nA measure of recent alcohol problems (Young Adult Alcohol Problems Test)\nA self-report measure on illicit drug use during their lifetime (World Health Organization-The Alcohol, Smoking and Substance Involvement Screening Test)\n\nParticipants are instructed that report of other drug use does not affect their ability to continue in the study or their study compensation. Once deemed eligible and enrolled in the study, the intake visit is then scheduled. Participants are given a take-home questionnaire to provide a family geneogram and contact information and addresses of friends and family who support or detract from their abstinence efforts, to be returned and reviewed with study staff at intake."
+  },
+  {
+    "objectID": "study_visits.html#intake",
+    "href": "study_visits.html#intake",
+    "title": "Visits",
+    "section": "Intake",
+    "text": "Intake\nAt intake (and FU #1, #2), participants reported:\n\nStatic information about trait affect (e.g.Depression Anxiety Stress Scale-21 and Perceived Stress Scale-10)\nA measure of alcohol cravings and alcohol use and self-efficacy (Penn Alcohol Craving Scale and Alcohol Abstinence Self-Efficacy Scale)\nStatus of their current housing\nEmployment status and satisfaction\nQuality of life questions\nRelapse risk\nRelationship status and satisfaction (Dyadic Adjustment Scale)\nUse of other treatment and aftercare services\nCommitment to abstinence\n\nUnique to intake, participants returned the take-home questionnaire with:\n\nTheir home address and contact information (home address, phone numbers) for friends, family members, and others with whom they have regular contact\nIndication of friends, family, and other frequent contacts who support their recovery (Multidimensional Scale of Perceived Social Support)\nIndication of frequent contacts who are high risk and/or detract from their recovery efforts (e.g., heavy-drinking friends/family; family/friends who undermine recovery efficacy)\nAddresses of other high risk locations (e.g., preferred locations for alcohol purchase; preferred bars and other locations for alcohol use)\n\nAddress and contact information are updated at monthly follow-up visits as necessary."
+  },
+  {
+    "objectID": "study_visits.html#follow-up-1-and-2",
+    "href": "study_visits.html#follow-up-1-and-2",
+    "title": "Visits",
+    "section": "Follow-up #1 and #2",
+    "text": "Follow-up #1 and #2\nAt FU #1 and #2 (and at intake), participants reported:\n\nStatic information about trait affect (e.g.Depression Anxiety Stress Scale-21 and Perceived Stress Scale-10)\nA measure of alcohol cravings and alcohol use and self-efficacy (Penn Alcohol Craving Scale and Alcohol Abstinence Self-Efficacy Scale)\nStatus of their current housing\nEmployment status and satisfaction\nQuality of life questions\nRelapse risk\nRelationship status and satisfaction (Dyadic Adjustment Scale)\nUse of other treatment and aftercare services\nCommitment to abstinence\n\nAt FU #1 and #2 (and at FU #3), participants provided:\n\nSelf-report of the acceptability and burden associated with measurement of each of the risk indicators\n\nUnique to FU #1, #2, participants updated:\n\nReports of illicit drug use on the World Health Organization-The Alcohol, Smoking and Substance Involvement Screening Test by indicating if they have used or had an urge to use any illicit substances in the past 30 days"
+  },
+  {
+    "objectID": "study_visits.html#follow-up-3",
+    "href": "study_visits.html#follow-up-3",
+    "title": "Visits",
+    "section": "Follow-up #3",
+    "text": "Follow-up #3\nAt FU #3 (and at FU #1, #2), participants provided:\n\nSelf-report of the acceptability and burden associated with measurement of each of the risk indicators"
+  },
+  {
+    "objectID": "documents.html#ra-documents",
+    "href": "documents.html#ra-documents",
+    "title": "Documents",
+    "section": "RA Documents",
+    "text": "RA Documents\nStudy visit SOPs:\nScreen\nIntake\nFollow-Up 1&2\nFollow-Up 3\nSurvey registration and distribution:\nSet-up, registration, and download\nSending ID Follow-Up 1&2 batteries to participants\nData transfer and management:\nEnrollment database management\nParticipant folders\nInterview data entry\nAudio and SMS download\nChecking audio files\nTransfer of audio files\nFollowMee final visit instructions (data download, removal of app)\nEmergencies:\nClinical crisis documentation"
+  },
+  {
+    "objectID": "documents.html#participant-interviews-surveys",
+    "href": "documents.html#participant-interviews-surveys",
+    "title": "Documents",
+    "section": "Participant Interviews & Surveys",
+    "text": "Participant Interviews & Surveys\nScreen 1 2\nIntake\nFollow-Up 1&2\nFollow-Up 3\nRecovery Interview Forms\nEMA Morning\nEMA Later"
+  },
+  {
+    "objectID": "completed_manuscripts.html",
+    "href": "completed_manuscripts.html",
+    "title": "Completed Manuscripts",
+    "section": "",
+    "text": "Wyant K, Sant’Ana SJ, Fronk GE, & Curtin JJ (under review). Psychopathol. Clin. Sci. Machine learning models for temporally precise lapse prediction for alcohol use disorder. [Preprint] [OSF]\nWyant, K., Moshontz, H., Ward, S. B., Fronk, G. E., & Curtin, J. J. (2023). Acceptability of Personal Sensing Among People With Alcohol Use Disorder: Observational Study. JMIR mHealth and uHealth. [PubMed] [OSF]"
   },
   {
     "objectID": "study_gps.html#gps-procedure",
@@ -63,108 +140,10 @@
     "text": "Data Dictionaries\n\n\n\n\n\n\nvar1\nvar2\nvar3\n\n\n\n\n1\n2\n3\n\n\n3\n5\n6"
   },
   {
-    "objectID": "study_insight.html#level-2-heading",
-    "href": "study_insight.html#level-2-heading",
-    "title": "3  Level 1 heading",
-    "section": "3.1 Level 2 heading",
-    "text": "3.1 Level 2 heading\n\n3.1.1 Level 3 heading\n\n3.1.1.1 Level 4 heading\nhere is some text"
-  },
-  {
-    "objectID": "index.html#basic-study-information-and-personnel",
-    "href": "index.html#basic-study-information-and-personnel",
-    "title": "Project Notebook for RISK",
-    "section": "Basic Study Information and Personnel",
-    "text": "Basic Study Information and Personnel\nTitle: Dynamic, real-time prediction of alcohol use lapse using mHealth technologies\nFunding sponsor: NIAAA (5R01AA024391-05)\nPI name: Dr. John J. Curtin\nCo-investigators (if applicable): David Gustafson, Jerry Zhu, Oguzhan Alagoz\nStudy coordinator: Susan Schneck\nOther members of the research team: Sarah Sant’Ana, Kendra Paquette, Dr. Hannah Moshontz, Gaylen Fronk\nPrevious members of the research team: [fill in]\nPartner organizations: CHESS\nIRB Protocol Number: 2015-0780"
-  },
-  {
-    "objectID": "study_procedure.html#study-procedure-chronology",
-    "href": "study_procedure.html#study-procedure-chronology",
-    "title": "Procedures",
-    "section": "Study Procedure Chronology",
-    "text": "Study Procedure Chronology\n\nRecruitment via flyers, ads (Metro busses, Fox 47 web advertisements, TV advertisements), and participating health care centers (Access Community Health Centers, Journey Mental Health Center)\nPhone screening, where general study interest, willingness to comply, and initial evaluation of eligibility was conducted.\nScreening visit with detailed overview of study requirements and informed consent.\nIntake visit\nFollow-up visits take place and 1, 2, and 3 months.\nPayment\nDebriefing (follow-up #3 visit)\n\n\nInclusion and Exclusion Criteria\n\nParticipants must be aged 18 or older\nParticipants must meet criteria for Alcohol Use Disorder with at least moderate severity (&gt;4 DSM-5 criteria)\nAt time of intake, participants must be abstinent from alcohol for at least 1 week and no longer than 2 months\nParticipants will be excluded if they have a lifetime history of severe and persistent mental illness (SPMI; e.g., bipolar disorder, schizophrenia, or psychosis), but may have other co-morbid psychopathology (e.g., mood, anxiety, and other substance use disorders)\nParticipants must be able to read and write in English\nParticipants must be willing to use their own smartphone, if they have a smart phone compatible with our study technology, while enrolled in the study\n\n\n\nWithdrawal Criteria\nNo explicit withdrawal criteria were defined for the study; rather, discontinuation was considered on a case-by-case basis."
-  },
-  {
-    "objectID": "study_procedure.html#simplified-version-of-consent-form",
-    "href": "study_procedure.html#simplified-version-of-consent-form",
-    "title": "Procedures",
-    "section": "Simplified Version of Consent Form",
-    "text": "Simplified Version of Consent Form\nIn-person visits:\nParticipants will be asked to come to five visits over 3 months at our study site on the UW-Madison campus.\nAt all five visits, participants will:\n\nFill out surveys asking about your experiences with alcohol, recent alcohol use, and alcohol withdrawal, your recovery efforts and personal support network, your current life situation, stressors, and satisfaction, as well as demographic information, personality, mental health, and emotions\nBe asked to complete approximately 20 different validated measures over three batteries of surveys\n\nDuring the three months of study participation, participants will:\n\nComplete 4x daily self-report surveys about alcohol use and commitment to alcohol abstinence, stressors, and emotion via smartphone\nComplete 1x daily recovery question by recording a brief audio text message\nBe asked to allow passive monitoring of behavior through smartphone apps (geolocation tracking, voice call and text message logs, and activity levels via accelerometer); these data will be downloaded directly onto lab computers at each monthly visit"
-  },
-  {
-    "objectID": "study_recruitment.html#recruitment-sites",
-    "href": "study_recruitment.html#recruitment-sites",
-    "title": "Recruitment",
-    "section": "Recruitment sites",
-    "text": "Recruitment sites\nFive local treatment sites across two large healthcare centers partnered with ARC for recruitment: Access Community Health Centers and Journey Mental Health Center.\nThese sites were selected to support recruitment of a diverse set of patients (e.g., both genders; racially diverse; AUD only vs. dual diagnosis). They were also selected to provide adequate patient flow for study recruitment and patient access to the study site in Madison, WI."
-  },
-  {
-    "objectID": "study_recruitment.html#advertising",
-    "href": "study_recruitment.html#advertising",
-    "title": "Recruitment",
-    "section": "Advertising",
-    "text": "Advertising\nRecruitment of the community at large was conducted by posting flyers or ads in places likely to be seen by the target population (Alcoholics Anonymous meetings, Metro buses, and online using sites like Facebook and Craigslist). The goal of community recruitment is to include participants using a wider variety of treatment methods to achieve sobriety, ranging from the structured clinical outpatient visits at the above recruiting sites, to self-directed abstinence methods without formal support."
-  },
-  {
-    "objectID": "completed_manuscripts.html",
-    "href": "completed_manuscripts.html",
-    "title": "Completed Manuscripts",
+    "objectID": "study_lag.html",
+    "href": "study_lag.html",
+    "title": "Lag",
     "section": "",
-    "text": "Wyant K, Sant’Ana SJ, Fronk GE, & Curtin JJ (under review). Psychopathol. Clin. Sci. Machine learning models for temporally precise lapse prediction for alcohol use disorder. [Preprint] [OSF]\nWyant, K., Moshontz, H., Ward, S. B., Fronk, G. E., & Curtin, J. J. (2023). Acceptability of Personal Sensing Among People With Alcohol Use Disorder: Observational Study. JMIR mHealth and uHealth. [PubMed] [OSF]"
-  },
-  {
-    "objectID": "study_visits.html#screening",
-    "href": "study_visits.html#screening",
-    "title": "Visits",
-    "section": "Screening",
-    "text": "Screening\nAt the screening visit, participants were provided with a detailed study overview including all study requirements and provide informed consent.\nTwo self-report measures were administered to confirm the potential participant’s alcohol use disorder diagnosis, establish that they are free from severe and persistent mental illness, confirm study eligibility via review of other inclusion/exclusion criteria described earlier, and document any other current psychiatric disorders:\n\nThe Symptom Checklist-90-Revised (SCL-90-R)\nDSM-5 Symptom Checklist for Alcohol Use Disorder\n\nAdditional information collected:\n\nDemographic information\nMeasures of trait affect (Distress Tolerance Questionnaire, Anxiety Sensitivity Index, and Intolerance of Uncertainty Scale), family functioning (McMaster Family Assessment Device)\nMeasures of broadband personality traits (Multidimensional Personality Questionnaire)\nMeasures of static information about their alcohol use history (e.g., age of first use, age of regular use; number past quit attempts; date of last use)\nA measure of recent alcohol problems (Young Adult Alcohol Problems Test)\nA self-report measure on illicit drug use during their lifetime (World Health Organization-The Alcohol, Smoking and Substance Involvement Screening Test)\n\nParticipants are instructed that report of other drug use does not affect their ability to continue in the study or their study compensation. Once deemed eligible and enrolled in the study, the intake visit is then scheduled. Participants are given a take-home questionnaire to provide a family geneogram and contact information and addresses of friends and family who support or detract from their abstinence efforts, to be returned and reviewed with study staff at intake."
-  },
-  {
-    "objectID": "study_visits.html#intake",
-    "href": "study_visits.html#intake",
-    "title": "Visits",
-    "section": "Intake",
-    "text": "Intake\nAt intake (and FU #1, #2), participants reported:\n\nStatic information about trait affect (e.g.Depression Anxiety Stress Scale-21 and Perceived Stress Scale-10)\nA measure of alcohol cravings and alcohol use and self-efficacy (Penn Alcohol Craving Scale and Alcohol Abstinence Self-Efficacy Scale)\nStatus of their current housing\nEmployment status and satisfaction\nQuality of life questions\nRelapse risk\nRelationship status and satisfaction (Dyadic Adjustment Scale)\nUse of other treatment and aftercare services\nCommitment to abstinence\n\nUnique to intake, participants returned the take-home questionnaire with:\n\nTheir home address and contact information (home address, phone numbers) for friends, family members, and others with whom they have regular contact\nIndication of friends, family, and other frequent contacts who support their recovery (Multidimensional Scale of Perceived Social Support)\nIndication of frequent contacts who are high risk and/or detract from their recovery efforts (e.g., heavy-drinking friends/family; family/friends who undermine recovery efficacy)\nAddresses of other high risk locations (e.g., preferred locations for alcohol purchase; preferred bars and other locations for alcohol use)\n\nAddress and contact information are updated at monthly follow-up visits as necessary."
-  },
-  {
-    "objectID": "study_visits.html#follow-up-1-and-2",
-    "href": "study_visits.html#follow-up-1-and-2",
-    "title": "Visits",
-    "section": "Follow-up #1 and #2",
-    "text": "Follow-up #1 and #2\nAt FU #1 and #2 (and at intake), participants reported:\n\nStatic information about trait affect (e.g.Depression Anxiety Stress Scale-21 and Perceived Stress Scale-10)\nA measure of alcohol cravings and alcohol use and self-efficacy (Penn Alcohol Craving Scale and Alcohol Abstinence Self-Efficacy Scale)\nStatus of their current housing\nEmployment status and satisfaction\nQuality of life questions\nRelapse risk\nRelationship status and satisfaction (Dyadic Adjustment Scale)\nUse of other treatment and aftercare services\nCommitment to abstinence\n\nAt FU #1 and #2 (and at FU #3), participants provided:\n\nSelf-report of the acceptability and burden associated with measurement of each of the risk indicators\n\nUnique to FU #1, #2, participants updated:\n\nReports of illicit drug use on the World Health Organization-The Alcohol, Smoking and Substance Involvement Screening Test by indicating if they have used or had an urge to use any illicit substances in the past 30 days"
-  },
-  {
-    "objectID": "study_visits.html#follow-up-3",
-    "href": "study_visits.html#follow-up-3",
-    "title": "Visits",
-    "section": "Follow-up #3",
-    "text": "Follow-up #3\nAt FU #3 (and at FU #1, #2), participants provided:\n\nSelf-report of the acceptability and burden associated with measurement of each of the risk indicators"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Project Notebook for RISK",
-    "section": "",
-    "text": "Welcome\nThis is a restrospective document describing how RISK was run. It includes a description of the study procedure at a high level and detailed information about study partners, technological tools used in the study, study procedure and administration, and processes for obtaining data. Where relevant, the document may refer readers to other documentation in the lab server. The purposes of this protocol are to 1) inform members of the research team, and 2) document study procedure and administration."
-  },
-  {
-    "objectID": "documents.html#ra-documents",
-    "href": "documents.html#ra-documents",
-    "title": "Documents",
-    "section": "RA Documents",
-    "text": "RA Documents\nStudy visit SOPs:\nScreen\nIntake\nFollow-Up 1&2\nFollow-Up 3\nSurvey registration and distribution:\nSet-up, registration, and download\nSending ID Follow-Up 1&2 batteries to participants\nData transfer and management:\nEnrollment database management\nParticipant folders\nInterview data entry\nAudio and SMS download\nChecking audio files\nTransfer of audio files\nFollowMee final visit instructions (data download, removal of app)\nEmergencies:\nClinical crisis documentation"
-  },
-  {
-    "objectID": "documents.html#participant-documents",
-    "href": "documents.html#participant-documents",
-    "title": "Documents",
-    "section": "Participant Documents",
-    "text": "Participant Documents"
-  },
-  {
-    "objectID": "documents.html#participant-interviews-surveys",
-    "href": "documents.html#participant-interviews-surveys",
-    "title": "Documents",
-    "section": "Participant Interviews & Surveys",
-    "text": "Participant Interviews & Surveys\nScreen 1 2\nIntake\nFollow-Up 1&2\nFollow-Up 3\nRecovery Interview Forms\nEMA Morning\nEMA Later"
+    "text": "Kendra Wyant\nLast updated: 1/30/2024\n\nStudy Overview\nThis study looks at EMA features for lagged prediction of lapse probability in the next week at the following hour intervals:\n\n0 (this is equivalent to our week model in the EMA paper)\n24 (1 day out)\n\n72 (3 days out)\n168 (1 week out)\n336 (2 weeks out)\n\n\n\nLabel Decisions\nLabels are complete\n\nThe first possible label for each participant starts 24 hours + lag time (in hours) after their study start date.\n\nThe last possible label is 7 days before their last EMA (study end date/time) because we are predicting one week windows and want a each epoch to contain a full 7 days.\n\nno_lapse labels that are within 24 hours of a lapse are removed.\n\n\n\nFeature Decisions\nFeatures are complete\n\nFeatures were made on CHTC. We are using the same feature set that was used in the EMA study except there is now a buffer (lag) between the epoch of features sampled and prediction window.\neda_demo_lag_functions confirms the lag in our feature functions are working as expected.\n\nConsider adding income and employment features?\n\n\n\nModeling Decisions"
   }
 ]

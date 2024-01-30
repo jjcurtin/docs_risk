@@ -40,4 +40,5 @@ book:
         - study_gps.qmd
         - study_messages.qmd
         - study_insight.qmd
+        - study_lag.qmd
 

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Project Notebook for RISK - Recruitment</title>
+<title>Project Notebook for RISK - Lag</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./study_visits.html" rel="next">
-<link href="./study_procedure.html" rel="prev">
+<link href="./study_insight.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -74,7 +73,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./study_procedure.html">Overview</a></li><li class="breadcrumb-item"><a href="./study_recruitment.html">Recruitment</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./study_gps.html">Studies</a></li><li class="breadcrumb-item"><a href="./study_lag.html">Lag</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -142,7 +141,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./study_recruitment.html" class="sidebar-item-text sidebar-link active">
+  <a href="./study_recruitment.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Recruitment</span></a>
   </div>
 </li>
@@ -195,7 +194,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./study_lag.html" class="sidebar-item-text sidebar-link">
+  <a href="./study_lag.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Lag</span></a>
   </div>
 </li>
@@ -211,17 +210,19 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#recruitment-sites" id="toc-recruitment-sites" class="nav-link active" data-scroll-target="#recruitment-sites">Recruitment sites</a></li>
-  <li><a href="#advertising" id="toc-advertising" class="nav-link" data-scroll-target="#advertising">Advertising</a></li>
+  <li><a href="#study-overview" id="toc-study-overview" class="nav-link active" data-scroll-target="#study-overview">Study Overview</a></li>
+  <li><a href="#label-decisions" id="toc-label-decisions" class="nav-link" data-scroll-target="#label-decisions">Label Decisions</a></li>
+  <li><a href="#feature-decisions" id="toc-feature-decisions" class="nav-link" data-scroll-target="#feature-decisions">Feature Decisions</a></li>
+  <li><a href="#modeling-decisions" id="toc-modeling-decisions" class="nav-link" data-scroll-target="#modeling-decisions">Modeling Decisions</a></li>
   </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/jjcurtin/docs_risk/edit/main/study_recruitment.qmd" class="toc-action">Edit this page</a></p></div></div></nav>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/jjcurtin/docs_risk/edit/main/study_lag.qmd" class="toc-action">Edit this page</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Recruitment</h1>
+<h1 class="title">Lag</h1>
 </div>
 
 
@@ -236,15 +237,43 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>Participants were recruited from Madison and the surrounding area.</p>
-<section id="recruitment-sites" class="level2">
-<h2 class="anchored" data-anchor-id="recruitment-sites">Recruitment sites</h2>
-<p>Five local treatment sites across two large healthcare centers partnered with ARC for recruitment: <a href="https://accesscommunityhealthcenters.org/">Access Community Health Centers</a> and <a href="https://www.journeymhc.org/">Journey Mental Health Center</a>.</p>
-<p>These sites were selected to support recruitment of a diverse set of patients (e.g., both genders; racially diverse; AUD only vs.&nbsp;dual diagnosis). They were also selected to provide adequate patient flow for study recruitment and patient access to the study site in Madison, WI.</p>
+<p>Kendra Wyant</p>
+<p>Last updated: 1/30/2024</p>
+<section id="study-overview" class="level3">
+<h3 class="anchored" data-anchor-id="study-overview">Study Overview</h3>
+<p>This study looks at EMA features for lagged prediction of lapse probability in the next week at the following hour intervals:</p>
+<ul>
+<li>0 (this is equivalent to our week model in the EMA paper)</li>
+<li>24 (1 day out)<br>
+</li>
+<li>72 (3 days out)</li>
+<li>168 (1 week out)</li>
+<li>336 (2 weeks out)</li>
+</ul>
 </section>
-<section id="advertising" class="level2">
-<h2 class="anchored" data-anchor-id="advertising">Advertising</h2>
-<p>Recruitment of the community at large was conducted by posting flyers or ads in places likely to be seen by the target population (Alcoholics Anonymous meetings, Metro buses, and online using sites like Facebook and Craigslist). The goal of community recruitment is to include participants using a wider variety of treatment methods to achieve sobriety, ranging from the structured clinical outpatient visits at the above recruiting sites, to self-directed abstinence methods without formal support.</p>
+<section id="label-decisions" class="level3">
+<h3 class="anchored" data-anchor-id="label-decisions">Label Decisions</h3>
+<p>Labels are complete</p>
+<ul>
+<li>The first possible label for each participant starts <code>24 hours + lag time (in hours)</code> after their study start date.<br>
+</li>
+<li>The last possible label is 7 days before their last EMA (study end date/time) because we are predicting one week windows and want a each epoch to contain a full 7 days.<br>
+</li>
+<li>no_lapse labels that are within 24 hours of a lapse are removed.</li>
+</ul>
+</section>
+<section id="feature-decisions" class="level3">
+<h3 class="anchored" data-anchor-id="feature-decisions">Feature Decisions</h3>
+<p>Features are complete</p>
+<ul>
+<li>Features were made on CHTC. We are using the same feature set that was used in the EMA study except there is now a buffer (lag) between the epoch of features sampled and prediction window.</li>
+<li><code>eda_demo_lag_functions</code> confirms the lag in our feature functions are working as expected.<br>
+</li>
+<li>Consider adding income and employment features?</li>
+</ul>
+</section>
+<section id="modeling-decisions" class="level3">
+<h3 class="anchored" data-anchor-id="modeling-decisions">Modeling Decisions</h3>
 
 
 </section>
@@ -485,14 +514,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./study_procedure.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Procedures</span>
+      <a href="./study_insight.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Insight</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./study_visits.html" class="pagination-link">
-        <span class="nav-page-text">Visits</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->

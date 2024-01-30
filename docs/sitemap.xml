@@ -2,38 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://github.io/jjcurtin/docs_risk/index.html</loc>
-    <lastmod>2024-01-22T17:31:51.557Z</lastmod>
-  </url>
-  <url>
-    <loc>https://github.io/jjcurtin/docs_risk/study_gps.html</loc>
-    <lastmod>2024-01-22T17:28:24.337Z</lastmod>
-  </url>
-  <url>
-    <loc>https://github.io/jjcurtin/docs_risk/study_messages.html</loc>
-    <lastmod>2024-01-22T17:28:48.101Z</lastmod>
-  </url>
-  <url>
-    <loc>https://github.io/jjcurtin/docs_risk/study_insight.html</loc>
-    <lastmod>2024-01-22T17:28:37.104Z</lastmod>
+    <lastmod>2024-01-30T19:28:48.490Z</lastmod>
   </url>
   <url>
     <loc>https://github.io/jjcurtin/docs_risk/study_procedure.html</loc>
-    <lastmod>2024-01-22T17:31:42.060Z</lastmod>
+    <lastmod>2024-01-30T19:28:48.492Z</lastmod>
   </url>
   <url>
     <loc>https://github.io/jjcurtin/docs_risk/study_recruitment.html</loc>
-    <lastmod>2024-01-22T17:28:59.116Z</lastmod>
-  </url>
-  <url>
-    <loc>https://github.io/jjcurtin/docs_risk/completed_manuscripts.html</loc>
-    <lastmod>2024-01-22T17:28:18.336Z</lastmod>
+    <lastmod>2024-01-30T19:28:48.502Z</lastmod>
   </url>
   <url>
     <loc>https://github.io/jjcurtin/docs_risk/study_visits.html</loc>
-    <lastmod>2024-01-22T17:29:05.612Z</lastmod>
+    <lastmod>2024-01-30T19:28:48.504Z</lastmod>
   </url>
   <url>
     <loc>https://github.io/jjcurtin/docs_risk/documents.html</loc>
-    <lastmod>2024-01-22T17:29:10.407Z</lastmod>
+    <lastmod>2024-01-30T19:28:48.516Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.io/jjcurtin/docs_risk/completed_manuscripts.html</loc>
+    <lastmod>2024-01-30T19:28:48.524Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.io/jjcurtin/docs_risk/study_gps.html</loc>
+    <lastmod>2024-01-30T19:29:07.403Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.io/jjcurtin/docs_risk/study_messages.html</loc>
+    <lastmod>2024-01-30T19:28:48.540Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.io/jjcurtin/docs_risk/study_insight.html</loc>
+    <lastmod>2024-01-30T19:28:48.545Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.io/jjcurtin/docs_risk/study_lag.html</loc>
+    <lastmod>2024-01-30T19:28:48.552Z</lastmod>
   </url>
 </urlset>
