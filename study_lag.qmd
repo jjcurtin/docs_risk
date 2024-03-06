@@ -1,7 +1,7 @@
 # Lag {.unnumbered}
 Kendra Wyant
 
-Last updated: 1/30/2024
+Last updated: 3/06/2024
 
 ### Study Overview
 
@@ -20,14 +20,21 @@ Labels are complete
 
 - The first possible label for each participant starts `24 hours + lag time (in hours)` after their study start date.   
 - The last possible label is 7 days before their last EMA (study end date/time) because we are predicting one week windows and want a each epoch to contain a full 7 days.     
-- no_lapse labels that are within 24 hours of a lapse are removed.    
+- no_lapse labels that are within *6* hours of a lapse are removed.    
 
 ### Feature Decisions
 
 Features are complete    
 
 - Features were made on CHTC. We are using the same feature set that was used in the EMA study except there is now a buffer (lag) between the epoch of features sampled and prediction window.
-- `eda_demo_lag_functions` confirms the lag in our feature functions are working as expected.   
-- Consider adding income and employment features?
+- We are also adding a numeric feature for income and dummy coded employment features as these demographics were inadvertently left out of the EMA models.   
+- `eda_demo_lag_functions` confirms the lag in our feature functions are working as expected.
+
+Feature versions  
+
+- Version 1 - uses features from v5 of ema study
+- Version 2 - uses features from v5 of ema study but with 6 hour exclusions instead of 24 hour
 
 ### Modeling Decisions
+
+- candidate algorithms = glmnet, xgboost, rda, single layer neural networks
