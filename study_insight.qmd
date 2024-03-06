@@ -1,1 +1,47 @@
 # Insight {.unnumbered}
+
+## Project Progress & Notes
+
+### Main Manuscript
+
+Project progress:
+
+1. Introduction: outlined in manuscript_insight.qmd. Ariela has added information from her literature review.
+
+2. Methods: use EMA methods as a first draft for relevant sections. Add information about insight models, update our label creation and feature creation processes, remove unnecessary information
+
+3. Results: analyses "done" but need final review. Need to make figures and tables. No drafting done yet.
+
+4. Discussion: no drafting or outlining done yet. Wait until other sections are written.
+
+### Presentation: Gaylen
+
+This presentation will discuss the full insight project and will be presented at CPA 2024. This presentation requires the following remaining steps:
+
+1. Review & finalize analyses (same as manuscript above)
+
+2. Decide on & make figures (same as manuscript above)
+
+3. Create presentation outline & draft
+
+4. Practice & revise presentation
+
+### Poster: Ariela
+
+This is a sub-project focusing specifically on individual differences analyses of insight accuracy. We explored how the ROCs in held-out folds differed as a function of individual differences including demographic and psychological variables. 
+
+Preliminary analyses have been conducted and can be found in mak_roc_id.qmd. Poster abstract was submitted & accepted for CPA 2024.
+
+Remaining steps:
+
+1. Review & finalize analyses
+
+2. Decide on & make figures
+
+3. Draft poster text
+
+4. Create poster
+
+5. Print poster
+
+6. Prepare for poster presentation: practice brief project overview, prepare for likely questions
