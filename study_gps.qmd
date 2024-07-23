@@ -24,6 +24,8 @@ negative, or mixed).
 Moves was used to track data from start of study until July 2018, after which FollowMee was
 used to capture participant geolocation data because the app was bought out by <a href="https://www.theguardian.com/technology/2014/apr/24/facebook-buys-moves-fitness-tracking-health-data">Facebook</a>, and then subsequently was <a href="https://about.fb.com/news/2018/07/hello-tbh-moving-on/#:~:text=In%202014%2C%20we%20bought%20the,Facebook%20acquired%20tbh%20in%202017.">deprecated.</a>
 
+Both Moves and FollowMee use algorithms which deactivate positioning when stationary (<a href = "https://core.ac.uk/download/pdf/55284697.pdf">Moves reference</a>, <a href = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6524056/">FollowMee reference</a>), which is advantageous for conserving battery life. The FollowMee tracking interval was set to 1-minute and, in the case of being stationary, the forced update interval was set to 2 hours([ref](https://github.com/jjcurtin/analysis_risk/blob/main/methods/sop/sop_android_tech_setup_followmee.docx)).
+
 
 ## Data Files
 
@@ -37,15 +39,7 @@ used to capture participant geolocation data because the app was bought out by <
 | Raw GPS      | Group      | studydata/risk/data_processed/shared/locations.csv    |
 | Enriched GPS | Group      | studydata/risk/data_processed/gps/gps_enriched.csv.xz |
 
-
-### Raw file tracker
-
-
-
-
 ## Data processing
-
-<!--Scripts are, to the best of my ability, in procedural order-->
 
 ### Data cleaning and concatenating
 

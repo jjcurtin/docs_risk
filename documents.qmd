@@ -14,6 +14,12 @@ Study visit SOPs:
 
 [Follow-Up 3](https://github.com/jjcurtin/analysis_risk/blob/main/methods/sop/sop_F3.pdf)
 
+Study technology set-up:
+
+[Technology set-up guide for Android (includes Moves, pre-July 2018)](https://github.com/jjcurtin/analysis_risk/blob/main/methods/sop/sop_android_tech_setup_moves.docx)
+
+[Technology set-up guide for Android (includes FollowMee, post-July 2018)](https://github.com/jjcurtin/analysis_risk/blob/main/methods/sop/sop_android_tech_setup_followmee.docx)
+
 Survey registration and distribution:
 
 [Set-up, registration, and download](https://github.com/jjcurtin/analysis_risk/blob/main/methods/sop/signal_survey.docx)
@@ -33,6 +39,8 @@ Data transfer and management:
 [Checking audio files](https://github.com/jjcurtin/analysis_risk/blob/main/methods/sop/sop_audio_transcript.docx)
 
 [Transfer of audio files](https://github.com/jjcurtin/analysis_risk/blob/main/methods/sop/audio_transfer.docx)
+
+[FollowMee application specifications](https://github.com/jjcurtin/analysis_risk/blob/main/methods/sop/sop_followmee_settings.docx)
 
 [FollowMee final visit instructions (data download, removal of app)](https://github.com/jjcurtin/analysis_risk/blob/main/methods/sop/followmee_finalvisit.docx)
 

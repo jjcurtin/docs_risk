@@ -81,7 +81,11 @@
     "href": "documents.html#participant-interviews-surveys",
     "title": "Documents",
     "section": "Participant Interviews & Surveys",
-    "text": "Participant Interviews & Surveys\nScreen 1 2\nIntake\nFollow-Up 1&2\nFollow-Up 3\nRecovery Interview Forms\nEMA Morning\nEMA Later"
+    "text": "Participant Interviews & Surveys\nScreen 1 2\nIntake\nFollow-Up 1&2\nFollow-Up 3\nRecovery Interview Forms\nEMA Morning\nEMA Later",
+    "crumbs": [
+      "Overview",
+      "Documents"
+    ]
   },
   {
     "objectID": "completed_manuscripts.html",
@@ -102,14 +106,22 @@
     "href": "study_gps.html#data-files",
     "title": "GPS",
     "section": "Data Files",
-    "text": "Data Files\n\n\n\n\n\n\n\n\nData type\nLevel\nLocation\n\n\n\n\nRaw GPS\nIndividual\nFor Moves: studydata/risk/data_raw/**/**_GPS.gpx, studydata/risk/data_raw/**/**_MOVES.zip, studydata/risk/data_raw/**/**_GPSMovesProcessed.rds; For FollowMee: studydata/risk/data_raw/**/**_GPSFollowRaw.rds\n\n\nRaw GPS\nIndividual\nstudydata/risk/data_raw/**/**_Locations.xlsx\n\n\nRaw GPS\nGroup\nstudydata/risk/data_processed/shared/gps.csv\n\n\nRaw GPS\nGroup\nstudydata/risk/data_processed/shared/locations.csv\n\n\nEnriched GPS\nGroup\nstudydata/risk/data_processed/gps/gps_enriched.csv.xz\n\n\n\n\nRaw file tracker"
+    "text": "Data Files\n\n\n\n\n\n\n\n\nData type\nLevel\nLocation\n\n\n\n\nRaw GPS\nIndividual\nFor Moves: studydata/risk/data_raw/**/**_GPS.gpx, studydata/risk/data_raw/**/**_MOVES.zip, studydata/risk/data_raw/**/**_GPSMovesProcessed.rds; For FollowMee: studydata/risk/data_raw/**/**_GPSFollowRaw.rds\n\n\nRaw GPS\nIndividual\nstudydata/risk/data_raw/**/**_Locations.xlsx\n\n\nRaw GPS\nGroup\nstudydata/risk/data_processed/shared/gps.csv\n\n\nRaw GPS\nGroup\nstudydata/risk/data_processed/shared/locations.csv\n\n\nEnriched GPS\nGroup\nstudydata/risk/data_processed/gps/gps_enriched.csv.xz",
+    "crumbs": [
+      "Studies",
+      "GPS"
+    ]
   },
   {
     "objectID": "study_gps.html#data-processing",
     "href": "study_gps.html#data-processing",
     "title": "GPS",
     "section": "Data processing",
-    "text": "Data processing\n\n\nData cleaning and concatenating\n\n\n\n\n\n\n\n\n\n\nName \nPath \nFunction \nInput \nOutput \n\n\n\n\ncln_gps.Rmd\nshared/scripts_cln/\ncreates the analysis gps dataset and conducts EDA\nindividual gps data files (studydata/risk/data_raw/**/**_GPS.gpx)\ngps.csv, gps.rds\n\n\ncln_locations.Rmd\nshared/scripts_cln/\nopens the individual raw excel files for frequent locations in the individual subject folders, merges them, and then does EDA\nindividual location files (studydata/risk/data_raw/**/**_Locations.xlsx)\nlocations.csv\n\n\nmak_study_dates.Rmd\ngps/mak/\ncreate list of important study dates\nvisit_dates.csv, ema_morning.csv, ema_later.csv\nstudy_dates.csv\n\n\nmak_labels_for_windows.Rmd\ngps/mak/\ncreates lapse labels at 1 hour window duration, 1 day window duration, and 1 week window duration.\nlapses.csv, study_dates.csv\nlabels_1hour.csv(.xz), labels_1day.csv(.xz), labels 1week.csv(.xz)\n\n\nmak_gps_enriched.Rmd\ngps/mak/\naggregates gps files for all subjects and then matches each geolocation to its nearest context\nstudy_dates.csv, locations.csv, gps.csv\nstudy_dates.csv, locations.csv, gps.csv\n\n\nmak_samples.Rmd\ngps/mak/\nchecks the GPS data and finalizes an overall sample\nstudy_dates.csv, locations.csv, gps_enriched.csv.xz\n# subj with satisfactory/missing data, days of missing GPS\n\n\n\n\n\nData cleaning/concatenating procedures for Moves data\n\n\nData cleaning/concatenating procedures for FollowMee data\n\n\nModeling scripts\n\n\n\n\n\n\n\n\n\n\n\nName \nPath \nFunction \nInput \nOutput \n\n\n\n\nmak_features_combined.Rmd\ngps/mak/\naggregates all CHTC features and checks for missing jobs and other EDA\nreturned CHTC files (features, error, out)\nfeatures_{WINDOW}.csv\n\n\nmak_training_metrics.Rmd\ngps/mak/\naggregates all results/metrics for a batch or batches of jobs that train all model configurations for a specific outcome/label window\njobs.csv, all result CSVs\nmodel comparisons (?)\n\n\nmak_rset.Rmd\ngps/mak/\nmakes and saves an RSET object that includes train/test splits defined by GA Tech for use across our labs\nlabels_05.csv, training_ids.csv\nrset.rds"
+    "text": "Data processing\n\nData cleaning and concatenating\n\n\n\n\n\n\n\n\n\n\nName \nPath \nFunction \nInput \nOutput \n\n\n\n\ncln_gps.Rmd\nshared/scripts_cln/\ncreates the analysis gps dataset and conducts EDA\nindividual gps data files (studydata/risk/data_raw/**/**_GPS.gpx)\ngps.csv, gps.rds\n\n\ncln_locations.Rmd\nshared/scripts_cln/\nopens the individual raw excel files for frequent locations in the individual subject folders, merges them, and then does EDA\nindividual location files (studydata/risk/data_raw/**/**_Locations.xlsx)\nlocations.csv\n\n\nmak_study_dates.Rmd\ngps/mak/\ncreate list of important study dates\nvisit_dates.csv, ema_morning.csv, ema_later.csv\nstudy_dates.csv\n\n\nmak_labels_for_windows.Rmd\ngps/mak/\ncreates lapse labels at 1 hour window duration, 1 day window duration, and 1 week window duration.\nlapses.csv, study_dates.csv\nlabels_1hour.csv(.xz), labels_1day.csv(.xz), labels 1week.csv(.xz)\n\n\nmak_gps_enriched.Rmd\ngps/mak/\naggregates gps files for all subjects and then matches each geolocation to its nearest context\nstudy_dates.csv, locations.csv, gps.csv\nstudy_dates.csv, locations.csv, gps.csv\n\n\nmak_samples.Rmd\ngps/mak/\nchecks the GPS data and finalizes an overall sample\nstudy_dates.csv, locations.csv, gps_enriched.csv.xz\n# subj with satisfactory/missing data, days of missing GPS\n\n\n\n\n\nData cleaning/concatenating procedures for Moves data\n\n\nData cleaning/concatenating procedures for FollowMee data\n\n\nModeling scripts\n\n\n\n\n\n\n\n\n\n\n\nName \nPath \nFunction \nInput \nOutput \n\n\n\n\nmak_features_combined.Rmd\ngps/mak/\naggregates all CHTC features and checks for missing jobs and other EDA\nreturned CHTC files (features, error, out)\nfeatures_{WINDOW}.csv\n\n\nmak_training_metrics.Rmd\ngps/mak/\naggregates all results/metrics for a batch or batches of jobs that train all model configurations for a specific outcome/label window\njobs.csv, all result CSVs\nmodel comparisons (?)\n\n\nmak_rset.Rmd\ngps/mak/\nmakes and saves an RSET object that includes train/test splits defined by GA Tech for use across our labs\nlabels_05.csv, training_ids.csv\nrset.rds",
+    "crumbs": [
+      "Studies",
+      "GPS"
+    ]
   },
   {
     "objectID": "study_messages.html#communications-collection-procedure",
@@ -152,5 +164,27 @@
     "title": "Insight",
     "section": "Project Progress & Notes",
     "text": "Project Progress & Notes\n\nMain Manuscript\nProject progress:\n\nIntroduction: outlined in manuscript_insight.qmd. Ariela has added information from her literature review.\nMethods: use EMA methods as a first draft for relevant sections. Add information about insight models, update our label creation and feature creation processes, remove unnecessary information\nResults: analyses “done” but need final review. Need to make figures and tables. No drafting done yet.\nDiscussion: no drafting or outlining done yet. Wait until other sections are written.\n\n\n\nPresentation: Gaylen\nThis presentation will discuss the full insight project and will be presented at CPA 2024. This presentation requires the following remaining steps:\n\nReview & finalize analyses (same as manuscript above)\nDecide on & make figures (same as manuscript above)\nCreate presentation outline & draft\nPractice & revise presentation\n\n\n\nPoster: Ariela\nThis is a sub-project focusing specifically on individual differences analyses of insight accuracy. We explored how the ROCs in held-out folds differed as a function of individual differences including demographic and psychological variables.\nPreliminary analyses have been conducted and can be found in mak_roc_id.qmd. Poster abstract was submitted & accepted for CPA 2024.\nRemaining steps:\n\nReview & finalize analyses\nDecide on & make figures\nDraft poster text\nCreate poster\nPrint poster\nPrepare for poster presentation: practice brief project overview, prepare for likely questions"
+  },
+  {
+    "objectID": "documents.html",
+    "href": "documents.html",
+    "title": "Documents",
+    "section": "",
+    "text": "RA Documents\nStudy visit SOPs:\nScreen\nIntake\nFollow-Up 1&2\nFollow-Up 3\nStudy technology set-up:\nTechnology set-up guide for Android (includes Moves, pre-July 2018)\nTechnology set-up guide for Android (includes FollowMee, post-July 2018)\nSurvey registration and distribution:\nSet-up, registration, and download\nSending ID Follow-Up 1&2 batteries to participants\nData transfer and management:\nEnrollment database management\nParticipant folders\nInterview data entry\nAudio and SMS download\nChecking audio files\nTransfer of audio files\nFollowMee application specifications\nFollowMee final visit instructions (data download, removal of app)\nEmergencies:\nClinical crisis documentation",
+    "crumbs": [
+      "Overview",
+      "Documents"
+    ]
+  },
+  {
+    "objectID": "study_gps.html",
+    "href": "study_gps.html",
+    "title": "GPS",
+    "section": "",
+    "text": "GPS procedure\nParticipants current location was continuously tracked via GPS and WiFi positioning technology on individual cell phones and available to the A-CHESS program for the study duration (a total of three months of mobile monitoring).\nAt monthly intervals, during follow-up visits (at month 1, 2, and 3), participants were asked to identify whether frequently visited locations (i.e., &gt;2 times per month) were helpful or harmful to their recovery and what emotion was associated with the location (i.e., positive, negative, or mixed).\nMoves was used to track data from start of study until July 2018, after which FollowMee was used to capture participant geolocation data because the app was bought out by Facebook, and then subsequently was deprecated.\nBoth Moves and FollowMee use algorithms which deactivate positioning when stationary (Moves reference, FollowMee reference), which is advantageous for conserving battery life. The FollowMee tracking interval was set to 1-minute and, in the case of being stationary, the forced update interval was set to 2 hours(ref).",
+    "crumbs": [
+      "Studies",
+      "GPS"
+    ]
   }
 ]
